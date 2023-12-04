@@ -1,0 +1,42 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir';
+    margin: 0;
+    font-size: $body-copy-text-size-mobile;
+    line-height: $body-copy-line-height-mobile;
+    font-weight: $body-copy-text-weight-mobile;
+    color: $band-site-black;
+
+
+}
+
+h1 {
+    font-family: 'AvenirBold';
+    font-size: $page-header-text-mobile;
+    line-height: $page-header-line-height-mobile;
+    font-weight: $page-header-text-weight-mobile;
+
+
+}
+
+h2 {
+    font-family: 'AvenirBold';
+    font-size: $section-header-text-size-mobile;
+    line-height: $section-header-line-height-mobile;
+    font-weight: $section-header-text-weight-mobile;
+    color: $band-site-black;
+}
+
+h3 {
+    font-family: 'AvenirDemi';
+    font-size: $subheader-text-size-mobile;
+    line-height: $subheader-line-height-mobile;
+    font-weight: $subheader-text-weight-mobile;
+    color: $band-site-black;
+}
