@@ -22,6 +22,17 @@
         color: white;
         padding: 16px 16px;
 
+        &-h1--line1 {
+            margin-bottom: 0;
+        }
+        &-h1--line2 {
+            margin-top: 0;
+        }
+
+        &-h1--preline {
+            margin-bottom: 0;
+        }
+
 
     }
 
@@ -50,7 +61,10 @@
     font-size: 18px;
     font-family: 'Avenir';
     font-weight: normal;
+    
 }
+
+
 
 
 @media (min-width: 768px) {

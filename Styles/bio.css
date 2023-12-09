@@ -390,8 +390,8 @@ body {
 
 h1 {
   font-family: "AvenirBold";
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: bold 700;
 }
 
@@ -430,6 +430,15 @@ h3 {
   flex-direction: column;
   color: white;
   padding: 16px 16px;
+}
+.heroShows__content-h1--line1 {
+  margin-bottom: 0;
+}
+.heroShows__content-h1--line2 {
+  margin-top: 0;
+}
+.heroShows__content-h1--preline {
+  margin-bottom: 0;
 }
 
 .iframe__div {
