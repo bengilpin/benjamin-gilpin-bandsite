@@ -99,6 +99,72 @@
 }
 
 
+
+
+// New comment box work area
+
+.commentBox {
+
+    &__containers {
+
+        margin-bottom: 16px;
+
+        &--profile {
+            height: 50px;
+            width: 50px;
+            background-color: lightgray;
+            border-radius: 50%;
+            margin-right: 16px;
+            margin-top: 13px;
+            overflow: hidden;
+            flex-shrink: 0;
+            
+           
+            
+        }
+
+        &--text {
+            
+
+            &--comment {
+                padding-right: 16px;
+                font-size: 16px;
+            }
+        }
+
+        
+
+
+        &__objects {
+
+            display: flex;
+            
+            
+            border-bottom: 1px gray solid;
+
+            &--header {
+                
+                display: flex;
+                justify-content: space-between;
+                
+
+              
+
+           
+        }
+
+        
+
+        
+
+
+
+
+    }
+}
+
+}
+
 .commentBox {
 
     padding: 0 16px;
@@ -110,6 +176,8 @@
         padding-left: 16px;
     }
 
+    
+
 
 
     &__container {
@@ -119,6 +187,7 @@
         padding-bottom: 16px;
         margin-bottom: 16px;
         border-bottom: 1px lightgray solid;
+        
         
 
         &--image {
@@ -198,6 +267,7 @@
 
     margin-top: 16px;
 }
+
 
 
 

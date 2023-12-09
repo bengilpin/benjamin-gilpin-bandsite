@@ -166,6 +166,32 @@
   }
 }
 
+.commentBox__containers {
+  margin-bottom: 16px;
+}
+.commentBox__containers--profile {
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-top: 13px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.commentBox__containers--text--comment {
+  padding-right: 16px;
+  font-size: 16px;
+}
+.commentBox__containers__objects {
+  display: flex;
+  border-bottom: 1px gray solid;
+}
+.commentBox__containers__objects--header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .commentBox {
   padding: 0 16px;
 }
@@ -481,10 +507,16 @@ h3 {
   color: #323232;
 }
 
-.bold {
+.bold20 {
   font-family: "AvenirDemi";
   font-weight: 700 bold;
   font-size: 20px;
+}
+
+.bold16 {
+  font-family: "AvenirDemi";
+  font-weight: 700 bold;
+  font-size: 16px;
 }
 
 .heroShows {
