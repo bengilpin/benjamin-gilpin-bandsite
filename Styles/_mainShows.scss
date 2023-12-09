@@ -3,7 +3,7 @@
 .heroShows {
     position: relative;
     height: 42vh;
-    background: url(/Assets/images/band.jpg) center/cover no-repeat;
+    background: url(/Assets/images/hero-shows.jpg) center/cover no-repeat;
     overflow: hidden;
 
     &__overlay {
@@ -25,6 +25,7 @@
         &-h1--line1 {
             margin-bottom: 0;
         }
+
         &-h1--line2 {
             margin-top: 0;
         }
@@ -50,6 +51,7 @@
     font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
         Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
     font-weight: 100;
+
     &--anchor1,
     &--anchor2 {
         color: #cccccc;
@@ -61,11 +63,52 @@
     font-size: 18px;
     font-family: 'Avenir';
     font-weight: normal;
-    
+
 }
 
+.upcomingShows {
+    &__header {
+        padding-left: 16px;
+        margin-top: 40px;
+        margin-bottom: 16px;
+    }
 
+    &__containers {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        border-bottom: 2px lightgrey solid;
 
+        &--button {
+            border-radius: 5px;
+            color: white;
+            background-color: $band-site-black;
+            height: 50px;
+            font-size: 18px;
+        }
+
+        &__mini {
+            p {
+                margin-top:5px;
+                font-size: 14px;
+                
+            }
+        }
+
+        &--titles {
+            color: rgb(151, 151, 151);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        
+
+    }
+}
+
+section {
+    padding-bottom: 16px;
+}
 
 @media (min-width: 768px) {
     .heroShows {

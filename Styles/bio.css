@@ -411,10 +411,16 @@ h3 {
   color: #323232;
 }
 
+.bold {
+  font-family: "AvenirDemi";
+  font-weight: 700 bold;
+  font-size: 20px;
+}
+
 .heroShows {
   position: relative;
   height: 42vh;
-  background: url(/Assets/images/band.jpg) center/cover no-repeat;
+  background: url(/Assets/images/hero-shows.jpg) center/cover no-repeat;
   overflow: hidden;
 }
 .heroShows__overlay {
@@ -461,6 +467,38 @@ h3 {
   font-size: 18px;
   font-family: "Avenir";
   font-weight: normal;
+}
+
+.upcomingShows__header {
+  padding-left: 16px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.upcomingShows__containers {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-bottom: 2px lightgrey solid;
+}
+.upcomingShows__containers--button {
+  border-radius: 5px;
+  color: white;
+  background-color: #323232;
+  height: 50px;
+  font-size: 18px;
+}
+.upcomingShows__containers__mini p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.upcomingShows__containers--titles {
+  color: rgb(151, 151, 151);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+section {
+  padding-bottom: 16px;
 }
 
 @media (min-width: 768px) {
