@@ -2,8 +2,8 @@
 
 .hero {
     position: relative;
-    height: 200px; // Adjust the height according to your design
-    background: url(/Assets/Images/hero-bio.jpg) center/cover no-repeat; // Set the background image
+    height: 200px; 
+    background: url(/Assets/Images/hero-bio.jpg) center/cover no-repeat;
     overflow: hidden;
 
     &__overlay {
