@@ -108,6 +108,10 @@
   color: white;
 }
 
+.heroShows__content--span {
+  font-size: 10px;
+}
+
 .sectionHeader {
   padding: 0 0 0 16px;
   margin: 0;
@@ -405,4 +409,92 @@ h3 {
   line-height: 22px;
   font-weight: demi 600;
   color: #323232;
+}
+
+.heroShows {
+  position: relative;
+  height: 42vh;
+  background: url(/Assets/images/band.jpg) center/cover no-repeat;
+  overflow: hidden;
+}
+.heroShows__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+.heroShows__content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 16px 16px;
+}
+
+.iframe__div {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.iframe__div--anchor1, .iframe__div--anchor2 {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.heroShows__content--span {
+  font-size: 18px;
+  font-family: "Avenir";
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .heroShows {
+    height: 100vh;
+  }
+  .heroShows__content-h1 {
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: bold 700;
+  }
+  .sectionHeader h2 {
+    padding: 0px 64px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+  .article__header h3 {
+    margin-bottom: 0;
+    padding: 8px 160px 0px 160px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: demi 600;
+  }
+  .article__header2 {
+    padding: 8px 176px 0px 176px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: demi 600;
+  }
+  .article__header-sub {
+    margin-top: 0;
+    padding: 0px 160px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: demi 600;
+  }
+  .article__content {
+    padding: 0px 160px;
+  }
+  .article__content p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: regular 400;
+  }
 }/*# sourceMappingURL=bio.css.map */

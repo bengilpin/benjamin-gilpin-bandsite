@@ -1,9 +1,9 @@
 @import 'variables.scss';
 
-.hero {
+.heroShows {
     position: relative;
-    height: 200px; 
-    background: url(/Assets/Images/hero-bio.jpg) center/cover no-repeat;
+    height: 42vh;
+    background: url(/Assets/images/band.jpg) center/cover no-repeat;
     overflow: hidden;
 
     &__overlay {
@@ -17,93 +17,48 @@
     }
 
     &__content {
-        padding: 0 16px;
-        margin-left: 16px;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        text-align: left;
+        display: flex;
+        flex-direction: column;
         color: white;
+        padding: 16px 16px;
 
 
+    }
 
+
+}
+
+.iframe__div {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+        Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+    &--anchor1,
+    &--anchor2 {
+        color: #cccccc;
+        text-decoration: none
     }
 }
 
 .heroShows__content--span {
-    font-size: 10px;
+    font-size: 18px;
+    font-family: 'Avenir';
+    font-weight: normal;
 }
 
-.sectionHeader {
-    padding: 0 0 0 16px;
-    margin: 0;
-    width: 100%;
-}
-
-.mainImage {
-    padding: 0 16px;
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-.article__header,
-.article__header2 {
-    padding: 0 16px;
-
-
-}
-
-.article__content {
-
-
-    p {
-        padding: 16px 16px;
-        margin: 0;
-    }
-
-    @media (min-width: 768px) {
-        column-count: 2;
-        column-gap: 20px;
-
-
-    }
-}
-
-.photoGallery {
-    padding: 16px 16px;
-    background-color: $alabaster;
-
-    &__container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        img {
-            width: calc(33.33% - 20px);
-            margin: 0 10px 20px;
-            overflow: hidden;
-
-            @media (max-width: 767px) {
-                width: 100%;
-            }
-        }
-    }
-
-
-}
 
 @media (min-width: 768px) {
-    .hero {
+    .heroShows {
         height: 100vh;
     }
 
-    .hero__content-h1 {
+    .heroShows__content-h1 {
 
         font-size: $page-header-text-desktop;
         line-height: $page-header-line-height-desktop;
@@ -159,21 +114,7 @@
 
     }
 
-    .mainImage {
-        padding: 0px 176px;
 
-        img {
-            height: 70%;
-        }
 
-    }
 
-    .photoGallery {
-        h2 {
-            padding: 0px 64px;
-            font-size: $section-header-text-size-desktop;
-            line-height: $section-header-line-height-desktop;
-            font-weight: $section-header-text-weight-desktop;
-        }
-    }
 }
