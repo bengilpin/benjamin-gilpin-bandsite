@@ -98,14 +98,34 @@
         <h1 class="commmentBox__header">Join the Conversation</h1>
         <form action="">
           <div class="commentBox__container">
-            <img src="/Assets/images/Mohan-muruge.jpg" alt="profile picture" />
+            <div class="commentBox__container--image">
+              <img
+                src="/Assets/images/Mohan-muruge.jpg"
+                alt="profile picture"
+              />
+            </div>
             <div class="commentBox__container__columnTwo">
-            <p class="commentBox__container__columnTwo--namecomment">NAME</p>
-            <label for="name">Enter your name</label>
-            <input type="text" name="name" id="name">
-            <label for="comment">Add a new comment</label>
-            <input type="text" name="comment" id="comment">
-          </div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+              />
+              <label class="comment__label" for="comment">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="4"
+                placeholder="Add a new comment"
+              ></textarea>
+              <button
+                type="submit"
+                class="commentBox__container__columnTwo--button"
+              >
+                COMMENT
+              </button>
+            </div>
           </div>
         </form>
         <div class="commentBox__containers__new"></div>
