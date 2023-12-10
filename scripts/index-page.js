@@ -35,8 +35,8 @@ const commentsArray = [
 
 function getCurrentTimestamp() {
   const now = new Date();
-  const month = (now.getMonth() + 1).toString().padStart(2, '0');
-  const day = now.getDate().toString().padStart(2, '0');
+  const month = (now.getMonth() + 1).toString().padStart(2, "0");
+  const day = now.getDate().toString().padStart(2, "0");
   const year = now.getFullYear();
 
   return `${month}/${day}/${year}`;
@@ -76,12 +76,12 @@ function createComment(commentData) {
   comment.innerText = commentData.comment;
   commentCardContent.appendChild(comment);
 
-  return commentCard; 
+  return commentCard;
 }
 
 function renderComments() {
   const myCommentContainer = document.querySelector(".commentsjswrapper");
-  myCommentContainer.innerHTML = '';
+  myCommentContainer.innerHTML = "";
 
   const reversedCommentsArray = commentsArray.slice().reverse();
 
@@ -91,29 +91,29 @@ function renderComments() {
   }
 }
 
-document.getElementById('commentForm').addEventListener('submit', function (event) {
-  event.preventDefault();
+document
+  .getElementById("commentForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const comment = document.getElementById('comment').value;
+    const name = document.getElementById("name").value;
+    const comment = document.getElementById("comment").value;
 
-  if (name && comment) {
-    const newComment = {
-      name: name,
-      timestamp: getCurrentTimestamp(),
-      comment: comment
-    };
+    if (name && comment) {
+      const newComment = {
+        name: name,
+        timestamp: getCurrentTimestamp(),
+        comment: comment,
+      };
 
-    commentsArray.push(newComment);
+      commentsArray.push(newComment);
 
-    document.getElementById('name').value = '';
-    document.getElementById('comment').value = '';
+      document.getElementById("name").value = "";
+      document.getElementById("comment").value = "";
 
-    renderComments(); // Call renderComments after adding a new comment
-  }
-});
-
-
+      renderComments(); // Call renderComments after adding a new comment
+    }
+  });
 
 // Initial rendering of existing comments
 renderComments();
