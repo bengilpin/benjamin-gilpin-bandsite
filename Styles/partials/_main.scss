@@ -2,12 +2,16 @@
 
 .hero {
     position: relative;
-    height: 200px;
+    height: 250px;
     background: url(/assets/images/hero-bio.jpg) center/cover no-repeat;
     overflow: hidden;
+    
 
     &__overlay {
         position: absolute;
+        display: flex;
+        align-items: center;
+        
         top: 0;
         left: 0;
         width: 100%;
@@ -17,34 +21,33 @@
     }
 
     &__content {
-        padding: 0 16px;
+       
         margin-left: 16px;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        transform: translate(-50%, -50%);
-        text-align: left;
+
         color: white;
+
+        
 
 
 
     }
 }
 
-.heroShows__content--span {
-    font-size: 10px;
-}
-
-.sectionHeader {
-    padding: 0 0 0 16px;
+.about-section {
+    padding-top: 16px;
     margin: 0;
     width: 100%;
+
+    h2 {
+
+        padding-left: 16px;
+    }
 }
 
-.mainImage {
+.main-image {
     padding: 0 16px;
 
-    img {
+    &--image {
         max-width: 100%;
         height: auto;
         display: block;
@@ -52,9 +55,10 @@
     }
 }
 
-.article__header,
-.article__header2 {
+.article__header {
     padding: 0 16px;
+
+    &-sub {}
 
 
 }
@@ -62,7 +66,7 @@
 .article__content {
 
 
-    p {
+    &--p {
         padding: 16px 16px;
         margin: 0;
     }
@@ -75,39 +79,40 @@
     }
 }
 
-.photoGallery {
-    padding: 16px 16px;
+.photo-gallery {
+    padding: 16px;
+
     background-color: $alabaster;
 
     &__container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
 
         img {
-            width: calc(33.33% - 20px);
-            margin: 0 10px 20px;
-            overflow: hidden;
+            max-width: 100%;
+            height: auto;
 
-            @media (max-width: 767px) {
-                width: 100%;
-            }
+
         }
+
+
     }
 
 
 }
 
 
-.commentsjswrapper {
+.js-wrapper-index {
 
     margin-bottom: 16px;
     max-width: 100%;
 }
 
-// New comment box work area
 
-.commentBox {
+.comment-box {
 
 
 
@@ -152,27 +157,28 @@
 
             display: flex;
             border-bottom: 1px gray solid;
+            margin: 0 16px;
 
             &--content {
                 max-width: 100%;
                 word-wrap: break-word;
                 overflow: hidden;
-                
+
                 flex-grow: 1;
-                
+
             }
 
             &--header {
 
                 display: flex;
 
-                
+
                 justify-content: space-between;
 
 
                 &--date {
                     flex-wrap: nowrap;
-                    
+
                 }
 
             }
@@ -180,13 +186,14 @@
     }
 }
 
-.commentBox {
+.placeholder-box {
 
     padding: 0 16px;
 
 
 
-    h1 {
+
+    &__header {
 
         padding-left: 16px;
     }
@@ -224,7 +231,7 @@
 
 
 
-        &__columnTwo {
+        &__column-two {
             display: flex;
             flex-direction: column;
             flex: 1;

@@ -21,7 +21,7 @@
 
   &__nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
     margin: 8px 0 0 0;
    
@@ -29,13 +29,14 @@
 
     &-link {
 
-      font-size: $subheader-text-size-mobile;
+      font-size: 16px;
       line-height: $subheader-line-height-mobile;
       font-weight: $subheader-text-weight-mobile;
       margin-bottom: 0px;
       text-decoration: none;
       color: $mercury;
       flex-grow: 1;
+      max-width: 50%;
 
       &:hover {
 
@@ -51,6 +52,7 @@
         padding-bottom: 8px;
         margin-bottom: 0px;
         color: white;
+        font-family: 'AvenirDemi';
       }
     }
   }

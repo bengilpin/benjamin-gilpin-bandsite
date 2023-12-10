@@ -44,35 +44,35 @@ function getCurrentTimestamp() {
 
 function createComment(commentData) {
   const commentCard = document.createElement("div");
-  commentCard.classList.add("commentBox__containers__objects");
+  commentCard.classList.add("comment-box__containers__objects");
 
   const profilePic = document.createElement("div");
-  profilePic.classList.add("commentBox__containers--profile");
+  profilePic.classList.add("comment-box__containers--profile");
   commentCard.appendChild(profilePic);
 
   const commentCardContent = document.createElement("div");
-  commentCardContent.classList.add("commentBox__containers__objects--content");
+  commentCardContent.classList.add("comment-box__containers__objects--content");
   commentCard.appendChild(commentCardContent); // Fix typo here
 
   const commentCardContentHeader = document.createElement("div");
   commentCardContentHeader.classList.add(
-    "commentBox__containers__objects--header"
+    "comment-box__containers__objects--header"
   );
   commentCardContent.appendChild(commentCardContentHeader);
 
   const name = document.createElement("p");
-  name.classList.add("commentBox__containers--text--name");
+  name.classList.add("comment-box__containers--text--name");
   name.classList.add("bold16");
   name.innerText = commentData.name; // Accessing properties from commentData
   commentCardContentHeader.appendChild(name);
 
   const date = document.createElement("p");
-  date.classList.add("commentBox__containers__objects--header--date");
+  date.classList.add("comment-box__containers__objects--header--date");
   date.innerText = commentData.timestamp;
   commentCardContentHeader.appendChild(date);
 
   const comment = document.createElement("p");
-  comment.classList.add("commentBox__containers--text--comment");
+  comment.classList.add("comment-box__containers--text--comment");
   comment.innerText = commentData.comment;
   commentCardContent.appendChild(comment);
 
@@ -80,7 +80,7 @@ function createComment(commentData) {
 }
 
 function renderComments() {
-  const myCommentContainer = document.querySelector(".commentsjswrapper");
+  const myCommentContainer = document.querySelector(".js-wrapper-index");
   myCommentContainer.innerHTML = "";
 
   const reversedCommentsArray = commentsArray.slice().reverse();
@@ -92,7 +92,7 @@ function renderComments() {
 }
 
 document
-  .getElementById("commentForm")
+  .getElementById("comment-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
