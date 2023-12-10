@@ -199,6 +199,7 @@
   max-width: 100%;
   word-wrap: break-word;
   overflow: hidden;
+  flex-grow: 1;
 }
 .commentBox__containers__objects--header {
   display: flex;

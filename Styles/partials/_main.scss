@@ -157,18 +157,22 @@
                 max-width: 100%;
                 word-wrap: break-word;
                 overflow: hidden;
+                
+                flex-grow: 1;
+                
             }
 
             &--header {
 
                 display: flex;
 
-                // flex-wrap: wrap;
+                
                 justify-content: space-between;
 
 
                 &--date {
                     flex-wrap: nowrap;
+                    
                 }
 
             }

@@ -83,8 +83,10 @@ function renderComments() {
   const myCommentContainer = document.querySelector(".commentsjswrapper");
   myCommentContainer.innerHTML = '';
 
-  for (let i = 0; i < commentsArray.length; i++) {
-    const card = createComment(commentsArray[i]);
+  const reversedCommentsArray = commentsArray.slice().reverse();
+
+  for (let i = 0; i < reversedCommentsArray.length; i++) {
+    const card = createComment(reversedCommentsArray[i]);
     myCommentContainer.appendChild(card);
   }
 }
