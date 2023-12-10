@@ -73,9 +73,9 @@
 
 }
 
-.upcomingShows {
+.upcoming-shows {
     &__header {
-        padding-left: 16px;
+        margin-left: 16px;
         margin-top: 40px;
         margin-bottom: 16px;
     }
@@ -113,9 +113,7 @@
     }
 }
 
-section {
-    padding-bottom: 16px;
-}
+
 
 @media (min-width: 768px) {
     .heroShows {

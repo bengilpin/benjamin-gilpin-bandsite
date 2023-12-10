@@ -35,14 +35,14 @@ const showsArray = [
 
 function createShows(shows) {
   const showContainer = document.createElement("div");
-  showContainer.classList.add("upcomingShows__containers");
+  showContainer.classList.add("upcoming-shows__containers");
 
   const miniContainer = document.createElement("div");
-  miniContainer.classList.add("upcomingShows__containers__mini");
+  miniContainer.classList.add("upcoming-shows__containers__mini");
   showContainer.appendChild(miniContainer);
 
   const showDate = document.createElement("p");
-  showDate.classList.add("upcomingShows__containers--titles");
+  showDate.classList.add("upcoming-shows__containers--titles");
   showDate.innerText = "Date";
   miniContainer.appendChild(showDate);
 
@@ -52,11 +52,11 @@ function createShows(shows) {
   miniContainer.appendChild(showDate2);
   /////
   const miniContainer2 = document.createElement("div");
-  miniContainer2.classList.add("upcomingShows__containers__mini");
+  miniContainer2.classList.add("upcoming-shows__containers__mini");
   showContainer.appendChild(miniContainer2);
 
   const showVenue = document.createElement("p");
-  showVenue.classList.add("upcomingShows__containers--titles");
+  showVenue.classList.add("upcoming-shows__containers--titles");
   showVenue.innerText = "Venue";
   miniContainer2.appendChild(showVenue);
 
@@ -66,11 +66,11 @@ function createShows(shows) {
   miniContainer2.appendChild(showVenue2);
   //////
   const miniContainer3 = document.createElement("div");
-  miniContainer3.classList.add("upcomingShows__containers__mini");
+  miniContainer3.classList.add("upcoming-shows__containers__mini");
   showContainer.appendChild(miniContainer3);
 
   const showLocation = document.createElement("p");
-  showLocation.classList.add("upcomingShows__containers--titles");
+  showLocation.classList.add("upcoming-shows__containers--titles");
   showLocation.innerText = "Location";
   miniContainer3.appendChild(showLocation);
 
@@ -80,7 +80,7 @@ function createShows(shows) {
   miniContainer3.appendChild(showLocation2);
 
   const button = document.createElement("button");
-  button.classList.add("upcomingShows__containers--button");
+  button.classList.add("upcoming-shows__containers--button");
   button.innerText = "BUY TICKETS";
   showContainer.append(button);
 
@@ -88,7 +88,7 @@ function createShows(shows) {
 }
 
 function renderShows() {
-  const showsWrapper = document.querySelector(".javascriptShows");
+  const showsWrapper = document.querySelector(".javascript-shows");
   showsWrapper.innerHTML = "";
 
   for (let i = 0; i < showsArray.length; i++) {
