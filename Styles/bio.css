@@ -538,18 +538,18 @@ h3 {
   font-size: 16px;
 }
 
-.javascriptShows {
+.javascript-shows {
   margin-bottom: 16px;
   max-width: 100%;
 }
 
-.heroShows {
+.hero {
   position: relative;
   height: 42vh;
   background: url(/Assets/images/hero-shows.jpg) center/cover no-repeat;
   overflow: hidden;
 }
-.heroShows__overlay {
+.hero__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -557,19 +557,19 @@ h3 {
   height: 100%;
   background-color: rgba(50, 50, 50, 0.5);
 }
-.heroShows__content {
+.hero__content {
   display: flex;
   flex-direction: column;
   color: white;
   padding: 16px 16px;
 }
-.heroShows__content-h1--line1 {
+.hero__content-h1--line1 {
   margin-bottom: 0;
 }
-.heroShows__content-h1--line2 {
+.hero__content-h1--line2 {
   margin-top: 0;
 }
-.heroShows__content-h1--preline {
+.hero__content-h1--preline {
   margin-bottom: 0;
 }
 

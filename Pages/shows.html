@@ -10,31 +10,33 @@
     <header>
       <div class="header">
         <div class="header__logo">
-          <a class="header__logo-image" href="/index.html">
+          <a class="header__logo--link" href="/index.html">
             <img src="/Assets/logos/Logo-bandsite.svg" alt="Band Logo" />
           </a>
         </div>
         <nav class="header__nav">
-          <a href="/index.html" class="header__nav-link1 header__nav-link1"
+          <a
+            href="/index.html"
+            class="header__nav-link header__nav-link--active"
             >Biography</a
           >
 
-          <a href="/shows.html" class="header__nav-link2--active">Shows</a>
+          <a href="/shows.html" class="header__nav-link--active">Shows</a>
         </nav>
       </div>
     </header>
 
-    <main class="mainShows">
-      <div class="heroShows">
-        <div class="heroShows__overlay">
-          <div class="heroShows__content">
-            <h1 class="heroShows__content-h1--preline">
-              <span class="heroShows__content--span"
+    <main class="main main--shows">
+      <div class="hero hero--shows">
+        <div class="hero__overlay">
+          <div class="hero__content">
+            <h1 class="hero__content-title">
+              <span class="hero__content-subtitle"
                 >Beautiful Beasts Album</span
               >
             </h1>
-            <h1 class="heroShows__content-h1--line1">Queen of Yellow x</h1>
-            <h1 class="heroShows__content-h1--line2">For The Stings</h1>
+            <h1 class="hero__content-h1--line1">Queen of Yellow x</h1>
+            <h1 class="hero__content-h1--line2">For The Stings</h1>
             <iframe
               width="100%"
               height="130"
@@ -64,136 +66,34 @@
         </div>
       </div>
 
-      <section class="upcomingShows">
-        <h1 class="upcomingShows__header">Shows</h1>
-        <div class="javascriptShows"></div>
+      <section class="upcoming-shows">
+        <h1 class="upcoming-shows__header">Shows</h1>
+        <div class="javascript-shows"></div>
         <script src="/scripts/build-shows.js"></script>
-        <!-- <div class="upcomingShows__containers">
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Date</p>
-              <p class="bold20">Mon Sept 06 2021</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Venue</p>
-              <p>Ronald Lane</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Location</p>
-              <p>San Francisco, CA</p>
-            </div>
-            <button class="upcomingShows__containers--button" type="submit">
-              BUY TICKETS
-            </button>
-          </div>
-          <div class="upcomingShows__containers">
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Date</p>
-              <p class="bold20">Tue Sept 21 2021</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Venue</p>
-              <p>Pier 3 East</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Location</p>
-              <p>San Francisco, CA</p>
-            </div>
-            <button class="upcomingShows__containers--button" type="submit">
-              BUY TICKETS
-            </button>
-          </div>
-          <div class="upcomingShows__containers">
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Date</p>
-              <p class="bold20">Fri Oct 15 2021</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Venue</p>
-              <p>View Lounge</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Location</p>
-              <p>San Francisco, CA</p>
-            </div>
-            <button class="upcomingShows__containers--button" type="submit">
-              BUY TICKETS
-            </button>
-          </div>
-          <div class="upcomingShows__containers">
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">date</p>
-              <p class="bold20">Sat Nov 06 2021</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">venue</p>
-              <p>Hyatt Agency</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Location</p>
-              <p>San Francisco, CA</p>
-            </div>
-            <button class="upcomingShows__containers--button" type="submit">
-              BUY TICKETS
-            </button>
-          </div>
-          <div class="upcomingShows__containers">
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">date</p>
-              <p class="bold20">Fri Nov 26 2021</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">venue</p>
-              <p>Moscow Center</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">location</p>
-              <p>San Francisco, CA</p>
-            </div>
-            <button class="upcomingShows__containers--button" type="submit">
-              BUY TICKETS
-            </button>
-          </div>
-          <div class="upcomingShows__containers">
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">date</p>
-              <p class="bold20">Wed Dec 15 2021</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">venue</p>
-              <p>Press Club</p>
-            </div>
-            <div class="upcomingShows__containers__mini">
-              <p class="upcomingShows__containers--titles">Location</p>
-              <p>San Francisco</p>
-            </div>
-            <button class="upcomingShows__containers--button" type="submit">
-              BUY TICKETS
-            </button>
-          </div> -->
       </section>
     </main>
 
     <footer class="get-in-touch">
-      <h2>Get in Touch</h2>
+      <h2 class="get-in-touch__title">Get in Touch</h2>
       <div class="get-in-touch__socials">
         <img
           src="/Assets/Icons/SVG/Icon-instagram.svg"
           alt=""
-          class="get-in-touch__socials-icon"
+          class="get-in-touch__socials--icon"
         />
         <img
           src="/Assets/Icons/SVG/Icon-facebook.svg"
           alt=""
-          class="get-in-touch__socials-icon"
+          class="get-in-touch__socials--icon"
         />
         <img
           src="/Assets/Icons/SVG/Icon-twitter.svg"
           alt=""
-          class="get-in-touch__socials-icon"
+          class="get-in-touch__socials--icon"
         />
       </div>
 
-      <div class="get-in-touch__cards__cam">
+      <div class="get-in-touch__cards">
         <p class="get-in-touch__cards-itemtop">Cam Adams</p>
         <p class="get-in-touch__cards-itembottom">The Bees Knees Management</p>
       </div>
