@@ -168,6 +168,7 @@
 
 .commentsjswrapper {
   margin-bottom: 16px;
+  max-width: 100%;
 }
 
 .commentBox__containers {
@@ -187,11 +188,17 @@
   padding-right: 16px;
   font-size: 16px;
   margin-top: 0;
-  flex-wrap: wrap;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 .commentBox__containers__objects {
   display: flex;
   border-bottom: 1px gray solid;
+}
+.commentBox__containers__objects--content {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 .commentBox__containers__objects--header {
   display: flex;
@@ -232,7 +239,8 @@
   flex-direction: column;
   flex: 1;
 }
-.commentBox__container__columnTwo #name, .commentBox__container__columnTwo #comment {
+.commentBox__container__columnTwo #name,
+.commentBox__container__columnTwo #comment {
   margin: 8px 0;
   height: 50px;
   border-width: 1px;
@@ -246,7 +254,8 @@
 .commentBox__container__columnTwo #name::-moz-placeholder, .commentBox__container__columnTwo #comment::-moz-placeholder {
   color: #323232;
 }
-.commentBox__container__columnTwo #name::placeholder, .commentBox__container__columnTwo #comment::placeholder {
+.commentBox__container__columnTwo #name::placeholder,
+.commentBox__container__columnTwo #comment::placeholder {
   color: #323232;
 }
 .commentBox__container__columnTwo #comment {

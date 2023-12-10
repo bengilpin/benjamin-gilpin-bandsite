@@ -76,7 +76,7 @@ function createComment(commentData) {
   comment.innerText = commentData.comment;
   commentCardContent.appendChild(comment);
 
-  return commentCard; // Return the commentCard, not the createComment function
+  return commentCard; 
 }
 
 function renderComments() {
