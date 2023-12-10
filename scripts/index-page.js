@@ -33,6 +33,15 @@ const commentsArray = [
   },
 ];
 
+function getCurrentTimestamp() {
+  const now = new Date();
+  const month = (now.getMonth() + 1).toString().padStart(2, '0');
+  const day = now.getDate().toString().padStart(2, '0');
+  const year = now.getFullYear();
+
+  return `${month}/${day}/${year}`;
+}
+
 function createComment(commentData) {
   const commentCard = document.createElement("div");
   commentCard.classList.add("commentBox__containers__objects");
@@ -70,10 +79,39 @@ function createComment(commentData) {
   return commentCard; // Return the commentCard, not the createComment function
 }
 
-const myCommentContainer = document.querySelector(".commentsjswrapper");
+function renderComments() {
+  const myCommentContainer = document.querySelector(".commentsjswrapper");
+  myCommentContainer.innerHTML = '';
 
-for (let i = 0; i < commentsArray.length; i++) {
-  const card = createComment(commentsArray[i]);
-  myCommentContainer.appendChild(card);
+  for (let i = 0; i < commentsArray.length; i++) {
+    const card = createComment(commentsArray[i]);
+    myCommentContainer.appendChild(card);
+  }
 }
 
+document.getElementById('commentForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const comment = document.getElementById('comment').value;
+
+  if (name && comment) {
+    const newComment = {
+      name: name,
+      timestamp: getCurrentTimestamp(),
+      comment: comment
+    };
+
+    commentsArray.push(newComment);
+
+    document.getElementById('name').value = '';
+    document.getElementById('comment').value = '';
+
+    renderComments(); // Call renderComments after adding a new comment
+  }
+});
+
+
+
+// Initial rendering of existing comments
+renderComments();

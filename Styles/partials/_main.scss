@@ -99,11 +99,16 @@
 }
 
 
+.commentsjswrapper {
 
+    margin-bottom: 16px;
+}
 
 // New comment box work area
 
 .commentBox {
+
+
 
     &__containers {
 
@@ -124,11 +129,15 @@
         }
 
         &--text {
+
+            
             
 
             &--comment {
                 padding-right: 16px;
                 font-size: 16px;
+                margin-top: 0;
+                flex-wrap: wrap;
             }
         }
 
@@ -140,13 +149,20 @@
             display: flex;
             
             
+            
             border-bottom: 1px gray solid;
 
             &--header {
                 
                 display: flex;
+                
+                // flex-wrap: wrap;
                 justify-content: space-between;
                 
+
+                &--date {
+                    flex-wrap: nowrap;
+                }
 
               
 

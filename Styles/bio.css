@@ -166,6 +166,10 @@
   }
 }
 
+.commentsjswrapper {
+  margin-bottom: 16px;
+}
+
 .commentBox__containers {
   margin-bottom: 16px;
 }
@@ -182,6 +186,8 @@
 .commentBox__containers--text--comment {
   padding-right: 16px;
   font-size: 16px;
+  margin-top: 0;
+  flex-wrap: wrap;
 }
 .commentBox__containers__objects {
   display: flex;
@@ -190,6 +196,9 @@
 .commentBox__containers__objects--header {
   display: flex;
   justify-content: space-between;
+}
+.commentBox__containers__objects--header--date {
+  flex-wrap: nowrap;
 }
 
 .commentBox {
