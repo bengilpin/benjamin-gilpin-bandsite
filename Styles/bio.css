@@ -2,6 +2,7 @@
   background-color: #323232;
   padding: 20px 0px 0px 0px;
   text-align: center;
+  height: 6rem;
 }
 .header__logo--link {
   max-width: 120px;
@@ -10,11 +11,11 @@
 .header__nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 8px 0 0 0;
+  padding-top: 16px;
 }
 .header__nav-link {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: demi 600;
   margin-bottom: 0px;
   text-decoration: none;
@@ -24,13 +25,14 @@
 }
 .header__nav-link:hover {
   border-bottom: 3px solid white;
-  padding-bottom: 25px;
+  padding-bottom: 14px;
   margin-bottom: 0px;
   color: white;
+  font-family: "AvenirDemi";
 }
 .header__nav-link--active {
   border-bottom: 3px solid white;
-  padding-bottom: 8px;
+  padding-bottom: 14px;
   margin-bottom: 0px;
   color: white;
   font-family: "AvenirDemi";
@@ -112,7 +114,8 @@
   margin: 0;
   width: 100%;
 }
-.about-section h2 {
+.about-section__h2 {
+  font-size: 32px;
   padding-left: 16px;
 }
 
@@ -128,9 +131,22 @@
 
 .article__header {
   padding: 0 16px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
+.article__header--h3 {
+  font-size: 20px;
+}
+.article__header-sub {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
 .article__content--p {
   padding: 16px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -145,6 +161,11 @@
 .photo-gallery {
   padding: 16px;
   background-color: #FAFAFA;
+}
+.photo-gallery__header {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-family: "AvenirDemi";
 }
 .photo-gallery__container {
   display: flex;
@@ -211,7 +232,7 @@
   display: flex;
   align-items: flex-start;
   padding-bottom: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
   border-bottom: 1px lightgray solid;
 }
 .placeholder-box__container--image {
@@ -266,7 +287,8 @@
   background-color: #323232;
   height: 50px;
   font-size: 18px;
-  padding-bottom: 16px;
+  padding-bottom: 0;
+  line-height: 50px;
 }
 
 .comment__label {

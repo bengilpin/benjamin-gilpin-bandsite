@@ -4,6 +4,7 @@
   background-color: $band-site-black;
   padding: 20px 0px 0px 0px;
   text-align: center;
+  height: 6rem;
 
 
   &__logo {
@@ -22,15 +23,15 @@
   &__nav {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 16px;
     
-    margin: 8px 0 0 0;
    
 
 
     &-link {
 
-      font-size: 16px;
-      line-height: $subheader-line-height-mobile;
+      font-size: 18px;
+      line-height: 18px;
       font-weight: $subheader-text-weight-mobile;
       margin-bottom: 0px;
       text-decoration: none;
@@ -41,15 +42,16 @@
       &:hover {
 
         border-bottom: 3px solid white;
-        padding-bottom: 25px;
+        padding-bottom: 14px;
         margin-bottom: 0px;
         color: white;
+        font-family: 'AvenirDemi';
 
       }
 
       &--active {
         border-bottom: 3px solid white;
-        padding-bottom: 8px;
+        padding-bottom: 14px;
         margin-bottom: 0px;
         color: white;
         font-family: 'AvenirDemi';

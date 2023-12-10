@@ -5,13 +5,13 @@
     height: 250px;
     background: url(/assets/images/hero-bio.jpg) center/cover no-repeat;
     overflow: hidden;
-    
+
 
     &__overlay {
         position: absolute;
         display: flex;
         align-items: center;
-        
+
         top: 0;
         left: 0;
         width: 100%;
@@ -21,12 +21,12 @@
     }
 
     &__content {
-       
+
         margin-left: 16px;
 
         color: white;
 
-        
+
 
 
 
@@ -38,8 +38,8 @@
     margin: 0;
     width: 100%;
 
-    h2 {
-
+    &__h2 {
+        font-size: 32px;
         padding-left: 16px;
     }
 }
@@ -57,8 +57,18 @@
 
 .article__header {
     padding: 0 16px;
+    font-size: 20px;
+    margin-bottom: 0;
 
-    &-sub {}
+    &--h3 {
+
+        font-size: 20px;
+    }
+
+    &-sub {
+        padding-left: 16px;
+        font-size: 18px;
+    }
 
 
 }
@@ -68,6 +78,9 @@
 
     &--p {
         padding: 16px 16px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: .1px;
         margin: 0;
     }
 
@@ -83,6 +96,13 @@
     padding: 16px;
 
     background-color: $alabaster;
+
+    &__header {
+
+        font-size: 2rem;
+        margin-bottom: 16px;
+        font-family: 'AvenirDemi';
+    }
 
     &__container {
         display: flex;
@@ -155,6 +175,8 @@
 
         &__objects {
 
+
+
             display: flex;
             border-bottom: 1px gray solid;
             margin: 0 16px;
@@ -193,6 +215,7 @@
 
 
 
+
     &__header {
 
         padding-left: 16px;
@@ -207,7 +230,7 @@
         display: flex;
         align-items: flex-start;
         padding-bottom: 16px;
-        margin-bottom: 16px;
+        margin-bottom: 0;
         border-bottom: 1px lightgray solid;
 
 
@@ -278,7 +301,15 @@
                 background-color: $band-site-black;
                 height: 50px;
                 font-size: 18px;
-                padding-bottom: 16px;
+                padding-bottom: 0;
+                line-height: 50px;
+
+                
+
+                
+
+
+
             }
         }
 
