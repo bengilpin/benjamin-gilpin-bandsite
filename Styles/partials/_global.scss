@@ -9,10 +9,10 @@
 body {
     font-family: 'Avenir';
     margin: 0;
-    font-size: $body-copy-text-size-mobile;
-    line-height: $body-copy-line-height-mobile;
-    font-weight: $body-copy-text-weight-mobile;
-    color: $band-site-black;
+    // font-size: $body-copy-text-size-mobile;
+    // line-height: $body-copy-line-height-mobile;
+    // font-weight: $body-copy-text-weight-mobile;
+    // color: $band-site-black;
 
 
 }
@@ -46,6 +46,13 @@ h3 {
     font-family: 'AvenirDemi';
     font-weight: 700 bold;
     font-size: 20px;   
+}
+
+.bold22 {
+
+    font-family: 'AvenirDemi';
+    font-weight: 700 bold;
+    font-size: 22px;
 }
 
 .bold16 {

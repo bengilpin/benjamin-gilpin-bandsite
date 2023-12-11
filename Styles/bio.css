@@ -135,7 +135,7 @@
   margin-bottom: 0;
 }
 .article__header--h3 {
-  font-size: 20px;
+  font-size: 2px;
 }
 .article__header-sub {
   padding-left: 16px;
@@ -461,10 +461,6 @@ span {
 body {
   font-family: "Avenir";
   margin: 0;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: regular 400;
-  color: #323232;
 }
 
 h1 {
@@ -494,6 +490,12 @@ h3 {
   font-family: "AvenirDemi";
   font-weight: 700 bold;
   font-size: 20px;
+}
+
+.bold22 {
+  font-family: "AvenirDemi";
+  font-weight: 700 bold;
+  font-size: 22px;
 }
 
 .bold16 {
