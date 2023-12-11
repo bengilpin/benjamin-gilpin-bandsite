@@ -24,8 +24,8 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 16px;
-    
-   
+
+
 
 
     &-link {
@@ -59,76 +59,70 @@
     }
   }
 }
-
+///////
 @media (min-width: 768px) {
-  .header__logo-image {
-    z-index: 2;
-  }
 
   .header {
-    display: grid;
-    grid-template-columns: 32px auto auto;
-    text-align: center;
-    position: relative;
-
-    padding: 40px 0;
-
+    background-color: $band-site-black;
+    padding: 0;
+    height: 6rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
 
     &__logo {
+      
+
+      &--link {
+        max-width: 120px;
+        max-height: 20px;
+        padding: 0 36px;
 
 
-      width: 100%;
-      grid-column: 1;
-      padding-left: 72px;
-      width: auto;
 
-
+      }
     }
 
-
-
-
     &__nav {
-      display: initial;
-      grid-column: 2;
-      position: relative;
+      
+      padding: 36px 36px 0 0px;
+      &-link {
 
-      z-index: 1;
-
-      &-link1 {
-        grid-column: 2;
-        width: auto;
-        margin-right: 24px;
-      }
-
-      &-link2 {
-        grid-column: 3;
-        width: auto;
-      }
-
-      &-link1,
-      &-link2 {
-
-        font-size: $labels-and-buttons-text-size-desktop;
-        line-height: $labels-and-buttons-line-height-desktop;
-        font-weight: $labels-and-buttons-text-weight-desktop;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: $subheader-text-weight-mobile;
+        margin-bottom: 0px;
+        text-decoration: none;
+        color: $mercury;
+        width: 100%;
+        padding: 0;
+        margin: 0 36px;
+        
+        
+        
+        
 
         &:hover {
+
           border-bottom: 3px solid white;
-          padding-bottom: 44px;
+          padding-bottom: 36px;
           margin-bottom: 0px;
           color: white;
+          font-family: 'AvenirDemi';
+
         }
 
         &--active {
           border-bottom: 3px solid white;
-          padding-bottom: 44px;
+          padding-bottom: 36px;
           margin-bottom: 0px;
           color: white;
+          font-family: 'AvenirDemi';
         }
       }
-
     }
   }
+
 }

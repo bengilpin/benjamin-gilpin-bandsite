@@ -141,4 +141,36 @@
 }
 
 
+@media (min-width: 768px) {
+    .hero {
+        height: 60vh; /* Adjust as needed */
+    }
 
+    .hero__content {
+        padding: 24px 24px; /* Adjust as needed */
+    }
+
+    .upcoming-shows__containers {
+        padding: 24px; /* Adjust as needed */
+    }
+
+    /* Add additional tablet-specific styles here */
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 80vh; /* Adjust as needed */
+    }
+
+    .hero__content {
+        padding: 32px 32px; /* Adjust as needed */
+    }
+
+    .upcoming-shows__containers {
+        padding: 32px; /* Adjust as needed */
+    }
+
+    /* Add additional desktop-specific styles here */
+}

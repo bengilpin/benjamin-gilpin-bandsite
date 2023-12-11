@@ -39,53 +39,47 @@
 }
 
 @media (min-width: 768px) {
-  .header__logo-image {
-    z-index: 2;
-  }
   .header {
-    display: grid;
-    grid-template-columns: 32px auto auto;
-    text-align: center;
-    position: relative;
-    padding: 40px 0;
+    background-color: #323232;
+    padding: 0;
+    height: 6rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
-  .header__logo {
-    width: 100%;
-    grid-column: 1;
-    padding-left: 72px;
-    width: auto;
+  .header__logo--link {
+    max-width: 120px;
+    max-height: 20px;
+    padding: 0 36px;
   }
   .header__nav {
-    display: initial;
-    grid-column: 2;
-    position: relative;
-    z-index: 1;
+    padding: 36px 36px 0 0px;
   }
-  .header__nav-link1 {
-    grid-column: 2;
-    width: auto;
-    margin-right: 24px;
+  .header__nav-link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: demi 600;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: #E1E1E1;
+    width: 100%;
+    padding: 0;
+    margin: 0 36px;
   }
-  .header__nav-link2 {
-    grid-column: 3;
-    width: auto;
-  }
-  .header__nav-link1, .header__nav-link2 {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: bold 700;
-  }
-  .header__nav-link1:hover, .header__nav-link2:hover {
+  .header__nav-link:hover {
     border-bottom: 3px solid white;
-    padding-bottom: 44px;
+    padding-bottom: 36px;
     margin-bottom: 0px;
     color: white;
+    font-family: "AvenirDemi";
   }
-  .header__nav-link1--active, .header__nav-link2--active {
+  .header__nav-link--active {
     border-bottom: 3px solid white;
-    padding-bottom: 44px;
+    padding-bottom: 36px;
     margin-bottom: 0px;
     color: white;
+    font-family: "AvenirDemi";
   }
 }
 .get-in-touch {
@@ -333,4 +327,30 @@ h3 {
   font-family: "AvenirDemi";
   font-size: 16px;
   margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 60vh; /* Adjust as needed */
+  }
+  .hero__content {
+    padding: 24px 24px; /* Adjust as needed */
+  }
+  .upcoming-shows__containers {
+    padding: 24px; /* Adjust as needed */
+  }
+  /* Add additional tablet-specific styles here */
+}
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .hero {
+    height: 80vh; /* Adjust as needed */
+  }
+  .hero__content {
+    padding: 32px 32px; /* Adjust as needed */
+  }
+  .upcoming-shows__containers {
+    padding: 32px; /* Adjust as needed */
+  }
+  /* Add additional desktop-specific styles here */
 }/*# sourceMappingURL=shows.css.map */
