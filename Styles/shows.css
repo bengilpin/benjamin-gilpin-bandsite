@@ -86,69 +86,251 @@
   background-color: #323232;
   color: #fff;
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.get-in-touch__title {
+  color: white;
+}
+.get-in-touch p {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: regular 400;
 }
 .get-in-touch__logo {
   margin-bottom: 20px;
-  margin-top: 32px;
-  flex-grow: 1;
-  height: 20px;
-  width: auto;
-  max-height: 20px;
-  max-width: 120px;
 }
-.get-in-touch__logo--image {
+.get-in-touch__socials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  align-content: center;
+}
+.get-in-touch__socials--icon {
+  margin-right: 30px;
+  text-align: center;
+  height: auto;
+}
+.get-in-touch__logo-image {
   max-width: 120px;
   height: 20px;
   display: block;
   margin-top: 10px;
 }
-.get-in-touch__title {
-  color: white;
-  font-size: 2rem;
-  font-family: "AvenirDemi";
+.get-in-touch__cards {
+  margin-top: 5px;
 }
-.get-in-touch__socials {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  align-content: center;
-}
-.get-in-touch__socials--icon {
-  margin-right: 2rem;
-  justify-content: center;
-  height: 30px;
-  width: auto;
-}
-.get-in-touch__cards__wrapper {
-  margin-bottom: 24px;
-}
-.get-in-touch__cards__wrapper--itemtop {
-  color: lightgray;
+.get-in-touch__cards-itemtop {
   margin-bottom: 0;
-  padding-bottom: 4px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: regular 400;
 }
-.get-in-touch__cards__wrapper--itembottom {
-  color: lightgray;
+.get-in-touch__cards-itembottom {
   margin-top: 0;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: regular 400;
-}
-.get-in-touch__cards--email {
-  color: lightgray;
-  font-size: 1rem;
-  margin-bottom: 32px;
 }
 
 span {
   color: white;
 }
 
+@media (min-width: 768px) {
+  .get-in-touch {
+    padding: 24px 36px 0px 36px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+  }
+  .get-in-touch__cards {
+    color: white;
+  }
+  .get-in-touch__cards__cam {
+    grid-row: 2;
+    grid-column: 1;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__cam2 {
+    grid-row: 3;
+    grid-column: 1;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__cam-email {
+    grid-row: 4;
+    grid-column: 1;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__pearl {
+    grid-row: 2;
+    grid-column: 2;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__carson {
+    grid-row: 2;
+    grid-column: 3;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__carson2 {
+    grid-row: 3;
+    grid-column: 3;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__carson-email {
+    grid-row: 4;
+    grid-column: 3;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards-itemtop {
+    color: lightgray;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+    font-size: 32px;
+    line-height: 18px;
+    font-weight: regular 400;
+  }
+  .get-in-touch__cards--itembottom {
+    color: lightgray;
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 18px;
+    font-weight: regular 400;
+  }
+  .get-in-touch__cards__pearl2 {
+    grid-row: 3;
+    grid-column: 2;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__pearl-email {
+    font-size: 32px;
+    grid-row: 4;
+    grid-column: 2;
+    padding-right: 24px;
+  }
+  .get-in-touch__copyright {
+    grid-row: 5;
+    font-size: 32px;
+    grid-column: 1;
+    grid-column: span 2;
+  }
+  .get-in-touch__logo {
+    grid-row: 1;
+    grid-column: 4;
+    justify-self: right;
+  }
+  .get-in-touch__logo h2 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  .get-in-touch__logo__socials {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .get-in-touch {
+    padding: 24px 128px 0px 128px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+  }
+  .get-in-touch__cards {
+    color: white;
+  }
+  .get-in-touch__cards__cam {
+    grid-row: 2;
+    grid-column: 1;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__cam2 {
+    grid-row: 3;
+    grid-column: 1;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__cam-email {
+    grid-row: 4;
+    grid-column: 1;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__pearl {
+    grid-row: 2;
+    grid-column: 2;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__carson {
+    grid-row: 2;
+    grid-column: 3;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__carson2 {
+    grid-row: 3;
+    grid-column: 3;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__carson-email {
+    grid-row: 4;
+    grid-column: 3;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards-itemtop {
+    color: lightgray;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+    font-size: 32px;
+    line-height: 18px;
+    font-weight: regular 400;
+  }
+  .get-in-touch__cards--itembottom {
+    color: lightgray;
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 18px;
+    font-weight: regular 400;
+  }
+  .get-in-touch__cards__pearl2 {
+    grid-row: 3;
+    grid-column: 2;
+    padding-right: 24px;
+    font-size: 32px;
+  }
+  .get-in-touch__cards__pearl-email {
+    font-size: 32px;
+    grid-row: 4;
+    grid-column: 2;
+    padding-right: 24px;
+  }
+  .get-in-touch__copyright {
+    grid-row: 5;
+    font-size: 32px;
+    grid-column: 1;
+    grid-column: span 2;
+  }
+  .get-in-touch__logo {
+    grid-row: 1;
+    grid-column: 4;
+    justify-self: right;
+  }
+  .get-in-touch__logo h2 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  .get-in-touch__logo__socials {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
 @font-face {
   font-family: "Avenir";
   src: url("/assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("/assets/fonts/AvenirNextLTPro.ttf") format("truetype");
@@ -330,27 +512,220 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  iframe {
+    width: 60%;
+    padding-left: 32px;
+  }
   .hero {
-    height: 60vh; /* Adjust as needed */
+    position: relative;
+    height: 70vh;
+    background: url(/Assets/images/hero-shows.jpg) center/cover no-repeat;
+    overflow: hidden;
+  }
+  .hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
   }
   .hero__content {
-    padding: 24px 24px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 32px 32px 64px 32px;
+  }
+  .hero__content-title {
+    margin-bottom: 0;
+  }
+  .hero__content-subtitle {
+    font-size: 36px;
+    font-family: "Avenir";
+    font-weight: 100;
+    padding-left: 36px;
+  }
+  .hero__content-h1--line1 {
+    margin-bottom: 0;
+    font-size: 64px;
+    padding-left: 32px;
+  }
+  .hero__content-h1--line2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 64px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+  .hero__content-h1--preline {
+    margin-bottom: 0;
+  }
+  .iframe__div {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+  }
+  .iframe__div--anchor1, .iframe__div--anchor2 {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  .upcoming-shows__header {
+    margin-left: 16px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    padding-top: 16px;
   }
   .upcoming-shows__containers {
-    padding: 24px; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 2px lightgrey solid;
   }
-  /* Add additional tablet-specific styles here */
+  .upcoming-shows__containers :hover {
+    background-color: lightgray;
+  }
+  .upcoming-shows__containers--button {
+    border-radius: 5px;
+    color: white;
+    background-color: #323232;
+    height: 50px;
+    font-size: 18px;
+  }
+  .upcoming-shows__containers--titles {
+    color: rgb(151, 151, 151);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .upcoming-shows__containers--titles--venue-location {
+    margin-top: 14px;
+  }
+  .upcoming-shows__containers--titles-sub {
+    font-family: "AvenirDemi";
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }
-/* Desktop Styles */
 @media (min-width: 1024px) {
+  iframe {
+    width: 40%;
+    padding-left: 32px;
+  }
+  .hero__text--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   .hero {
-    height: 80vh; /* Adjust as needed */
+    position: relative;
+    height: 80vh;
+    background: url(/Assets/images/hero-shows.jpg) center/cover no-repeat;
+    overflow: hidden;
+  }
+  .hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
   }
   .hero__content {
-    padding: 32px 32px; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 16px 16px;
+  }
+  .hero__content-title {
+    margin-bottom: 0;
+  }
+  .hero__content-subtitle {
+    font-size: 36px;
+    font-family: "Avenir";
+    font-weight: 100;
+    padding-left: 36px;
+  }
+  .hero__content-h1--line1 {
+    margin-bottom: 0;
+    font-size: 64px;
+    padding-left: 32px;
+  }
+  .hero__content-h1--line2 {
+    margin-top: 0;
+    font-size: 64px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+  .hero__content-h1--preline {
+    margin-bottom: 0;
+  }
+  .iframe__div {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+  }
+  .iframe__div--anchor1, .iframe__div--anchor2 {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  .upcoming-shows__header {
+    margin-left: 16px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    padding-top: 16px;
   }
   .upcoming-shows__containers {
-    padding: 32px; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 2px lightgrey solid;
   }
-  /* Add additional desktop-specific styles here */
+  .upcoming-shows__containers :hover {
+    background-color: lightgray;
+  }
+  .upcoming-shows__containers--button {
+    border-radius: 5px;
+    color: white;
+    background-color: #323232;
+    height: 50px;
+    font-size: 18px;
+  }
+  .upcoming-shows__containers--titles {
+    color: rgb(151, 151, 151);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .upcoming-shows__containers--titles--venue-location {
+    margin-top: 14px;
+  }
+  .upcoming-shows__containers--titles-sub {
+    font-family: "AvenirDemi";
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=shows.css.map */
