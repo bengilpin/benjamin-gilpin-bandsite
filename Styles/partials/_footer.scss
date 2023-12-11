@@ -3,7 +3,7 @@
 .get-in-touch {
     background-color: $band-site-black;
     color: #fff;
-    padding: 16px;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr;
 
@@ -18,18 +18,18 @@
     }
 
     &__logo {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     &__socials {
         display: flex;
         align-items: center;
-        margin-bottom: 5px;
+        margin-bottom: .3125rem;
         align-content: center;
 
         &--icon {
 
-            margin-right: 30px;
+            margin-right: 1.875rem;
             text-align: center;
             height: auto;
 
@@ -37,14 +37,14 @@
     }
 
     &__logo-image {
-        max-width: 120px;
-        height: 20px;
+        max-width: 7.5rem;
+        height: 1.25rem;
         display: block;
-        margin-top: 10px;
+        margin-top: .625rem;
     }
 
     &__cards {
-        margin-top: 5px;
+        margin-top: .3125rem;
     }
 
     &__cards-itemtop {
@@ -63,15 +63,15 @@ span {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
 
 
 
     .get-in-touch {
-        padding: 24px 36px 0px 36px;
+        padding: 1.5rem 2.25rem 0rem 2.25rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 24px;
+        grid-gap: 1.5rem;
 
 
         &__cards {
@@ -79,44 +79,44 @@ span {
             &__cam {
                 grid-row: 2;
                 grid-column: 1;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__cam2 {
                 grid-row: 3;
                 grid-column: 1;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__cam-email {
                 grid-row: 4;
                 grid-column: 1;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__pearl {
                 grid-row: 2;
                 grid-column: 2;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__carson {
                 grid-row: 2;
                 grid-column: 3;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
 
             }
 
             &__carson2 {
                 grid-row: 3;
                 grid-column: 3;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             color: white;
@@ -124,15 +124,15 @@ span {
             &__carson-email {
                 grid-row: 4;
                 grid-column: 3;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &-itemtop {
                 color: lightgray;
                 margin-bottom: 0;
-                padding-bottom: 4px;
-                font-size: 32px;
+                padding-bottom: .25rem;
+                font-size: 2rem;
                 line-height: $footer-copy-line-height-mobile;
                 font-weight: $footer-copy-text-weight-mobile;
 
@@ -141,7 +141,7 @@ span {
             &--itembottom {
                 color: lightgray;
                 margin-top: 0;
-                font-size: 32px;
+                font-size: 2rem;
                 line-height: $footer-copy-line-height-mobile;
                 font-weight: $footer-copy-text-weight-mobile;
             }
@@ -149,17 +149,17 @@ span {
             &__pearl2 {
                 grid-row: 3;
                 grid-column: 2;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
 
 
             }
 
             &__pearl-email {
-                font-size: 32px;
+                font-size: 2rem;
                 grid-row: 4;
                 grid-column: 2;
-                padding-right: 24px;
+                padding-right: 1.5rem;
             }
 
 
@@ -170,7 +170,7 @@ span {
 
         &__copyright {
             grid-row: 5;
-            font-size: 32px;
+            font-size: 2rem;
             grid-column: 1;
             grid-column: span 2;
 
@@ -204,13 +204,13 @@ span {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
 
     .get-in-touch {
-        padding: 24px 128px 0px 128px;
+        padding: 1.5rem 8rem 0rem 8rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 24px;
+        grid-gap: 1.5rem;
 
 
         &__cards {
@@ -218,44 +218,44 @@ span {
             &__cam {
                 grid-row: 2;
                 grid-column: 1;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__cam2 {
                 grid-row: 3;
                 grid-column: 1;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__cam-email {
                 grid-row: 4;
                 grid-column: 1;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__pearl {
                 grid-row: 2;
                 grid-column: 2;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &__carson {
                 grid-row: 2;
                 grid-column: 3;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
 
             }
 
             &__carson2 {
                 grid-row: 3;
                 grid-column: 3;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             color: white;
@@ -263,15 +263,15 @@ span {
             &__carson-email {
                 grid-row: 4;
                 grid-column: 3;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
             }
 
             &-itemtop {
                 color: lightgray;
                 margin-bottom: 0;
-                padding-bottom: 4px;
-                font-size: 32px;
+                padding-bottom: .25rem;
+                font-size: 2rem;
                 line-height: $footer-copy-line-height-mobile;
                 font-weight: $footer-copy-text-weight-mobile;
 
@@ -280,7 +280,7 @@ span {
             &--itembottom {
                 color: lightgray;
                 margin-top: 0;
-                font-size: 32px;
+                font-size: 2rem;
                 line-height: $footer-copy-line-height-mobile;
                 font-weight: $footer-copy-text-weight-mobile;
             }
@@ -288,17 +288,17 @@ span {
             &__pearl2 {
                 grid-row: 3;
                 grid-column: 2;
-                padding-right: 24px;
-                font-size: 32px;
+                padding-right: 1.5rem;
+                font-size: 2rem;
 
 
             }
 
             &__pearl-email {
-                font-size: 32px;
+                font-size: 2rem;
                 grid-row: 4;
                 grid-column: 2;
-                padding-right: 24px;
+                padding-right: 1.5rem;
             }
 
 
@@ -309,7 +309,7 @@ span {
 
         &__copyright {
             grid-row: 5;
-            font-size: 32px;
+            font-size: 2rem;
             grid-column: 1;
             grid-column: span 2;
 

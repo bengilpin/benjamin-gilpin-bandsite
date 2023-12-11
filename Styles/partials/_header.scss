@@ -2,7 +2,7 @@
 
 .header {
   background-color: $band-site-black;
-  padding: 20px 0px 0px 0px;
+  padding: 1.25rem 0rem 0rem 0rem;
   text-align: center;
   height: 6rem;
 
@@ -10,8 +10,8 @@
   &__logo {
 
     &--link {
-      max-width: 120px;
-      max-height: 20px;
+      max-width: 7.5rem;
+      max-height: 1.25rem;
 
 
 
@@ -23,17 +23,17 @@
   &__nav {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 16px;
+    padding-top: 1rem;
 
 
 
 
     &-link {
 
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 1.125rem;
+      line-height: 1.125rem;
       font-weight: $subheader-text-weight-mobile;
-      margin-bottom: 0px;
+      margin-bottom: 0rem;
       text-decoration: none;
       color: $mercury;
       flex-grow: 1;
@@ -41,26 +41,26 @@
 
       &:hover {
 
-        border-bottom: 3px solid white;
-        padding-bottom: 14px;
-        margin-bottom: 0px;
+        border-bottom: .1875rem solid white;
+        padding-bottom: .875rem;
+        margin-bottom: 0rem;
         color: white;
         font-family: 'AvenirDemi';
 
       }
 
       &--active {
-        border-bottom: 3px solid white;
-        padding-bottom: 14px;
-        margin-bottom: 0px;
+        border-bottom: .1875rem solid white;
+        padding-bottom: .875rem;
+        margin-bottom: 0rem;
         color: white;
         font-family: 'AvenirDemi';
       }
     }
   }
 }
-///////
-@media (min-width: 768px) {
+
+@media (min-width: 48rem) {
 
   .header {
     background-color: $band-site-black;
@@ -76,9 +76,9 @@
       
 
       &--link {
-        max-width: 120px;
-        max-height: 20px;
-        padding: 0 36px;
+        max-width: 7.5rem;
+        max-height: 1.25rem;
+        padding: 0 2.25rem;
 
 
 
@@ -87,18 +87,18 @@
 
     &__nav {
       
-      padding: 36px 36px 0 0px;
+      padding: 2.25rem 2.25rem 0 0rem;
       &-link {
 
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 1.125rem;
+        line-height: 1.125rem;
         font-weight: $subheader-text-weight-mobile;
-        margin-bottom: 0px;
+        margin-bottom: 0rem;
         text-decoration: none;
         color: $mercury;
         width: 100%;
         padding: 0;
-        margin: 0 36px;
+        margin: 0 2.25rem;
         
         
         
@@ -106,18 +106,18 @@
 
         &:hover {
 
-          border-bottom: 3px solid white;
-          padding-bottom: 36px;
-          margin-bottom: 0px;
+          border-bottom: .1875rem solid white;
+          padding-bottom: 2.25rem;
+          margin-bottom: 0rem;
           color: white;
           font-family: 'AvenirDemi';
 
         }
 
         &--active {
-          border-bottom: 3px solid white;
-          padding-bottom: 36px;
-          margin-bottom: 0px;
+          border-bottom: .1875rem solid white;
+          padding-bottom: 2.25rem;
+          margin-bottom: 0rem;
           color: white;
           font-family: 'AvenirDemi';
         }

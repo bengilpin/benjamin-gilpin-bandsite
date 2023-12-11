@@ -2,7 +2,7 @@
 
 .hero {
     position: relative;
-    height: 250px;
+    height: 15.625rem;
     background: url(/assets/images/hero-bio.jpg) center/cover no-repeat;
     overflow: hidden;
 
@@ -22,7 +22,7 @@
 
     &__content {
 
-        margin-left: 16px;
+        margin-left: 1rem;
 
         color: white;
 
@@ -34,18 +34,18 @@
 }
 
 .about-section {
-    padding-top: 16px;
+    padding-top: 1rem;
     margin: 0;
     width: 100%;
 
     &__h2 {
-        font-size: 32px;
-        padding-left: 16px;
+        font-size: 2rem;
+        padding-left: 1rem;
     }
 }
 
 .main-image {
-    padding: 0 16px;
+    padding: 0 1rem;
 
     &--image {
         max-width: 100%;
@@ -56,18 +56,18 @@
 }
 
 .article__header {
-    padding: 0 16px;
-    font-size: 20px;
+    padding: 0 1rem;
+    font-size: 1.25rem;
     margin-bottom: 0;
 
     &--h3 {
 
-        font-size: 2px;
+        font-size: .125rem;
     }
 
     &-sub {
-        padding-left: 16px;
-        font-size: 18px;
+        padding-left: 1rem;
+        font-size: 1.125rem;
     }
 
 
@@ -77,30 +77,30 @@
 
 
     &--p {
-        padding: 16px 16px;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: .1px;
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        letter-spacing: .0063rem;
         margin: 0;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 48rem) {
         column-count: 2;
-        column-gap: 20px;
+        column-gap: 1.25rem;
 
 
     }
 }
 
 .photo-gallery {
-    padding: 16px;
+    padding: 1rem;
 
     background-color: $alabaster;
 
     &__header {
 
         font-size: 2rem;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         font-family: 'AvenirDemi';
     }
 
@@ -108,7 +108,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 1rem;
 
 
         img {
@@ -127,7 +127,7 @@
 
 .js-wrapper-index {
 
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     max-width: 100%;
 }
 
@@ -138,15 +138,15 @@
 
     &__containers {
 
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
 
         &--profile {
-            height: 50px;
-            width: 50px;
+            height: 3.125rem;
+            width: 3.125rem;
             background-color: lightgray;
             border-radius: 50%;
-            margin-right: 16px;
-            margin-top: 13px;
+            margin-right: 1rem;
+            margin-top: .8125rem;
             overflow: hidden;
             flex-shrink: 0;
 
@@ -160,8 +160,8 @@
 
 
             &--comment {
-                padding-right: 16px;
-                font-size: 16px;
+                padding-right: 1rem;
+                font-size: 1rem;
                 margin-top: 0;
                 word-wrap: break-word;
                 max-width: 100%;
@@ -178,8 +178,8 @@
 
 
             display: flex;
-            border-bottom: 1px lightgray solid;
-            margin: 0 16px;
+            border-bottom: .0625rem lightgray solid;
+            margin: 0 1rem;
 
             &--content {
                 max-width: 100%;
@@ -210,7 +210,7 @@
 
 .placeholder-box {
 
-    padding: 0 16px;
+    padding: 0 1rem;
 
 
 
@@ -218,7 +218,7 @@
 
     &__header {
 
-        padding-left: 16px;
+        padding-left: 1rem;
     }
 
 
@@ -229,20 +229,20 @@
 
         display: flex;
         align-items: flex-start;
-        padding-bottom: 16px;
+        padding-bottom: 1rem;
         margin-bottom: 0;
-        border-bottom: 1px lightgray solid;
+        border-bottom: .0625rem lightgray solid;
 
 
 
         &--image {
 
-            width: 50px;
-            height: 50px;
-            margin-right: 16px;
+            width: 3.125rem;
+            height: 3.125rem;
+            margin-right: 1rem;
             border-radius: 50%;
             overflow: hidden;
-            margin-top: 26px;
+            margin-top: 1.625rem;
 
             img {
 
@@ -262,15 +262,15 @@
             #name,
             #comment {
 
-                margin: 8px 0;
-                height: 50px;
-                border-width: 1px;
+                margin: .5rem 0;
+                height: 3.125rem;
+                border-width: .0625rem;
                 border-color: lightgray;
                 background-color: $alabaster;
-                border-radius: 5px;
+                border-radius: .3125rem;
                 font-family: 'avenir';
-                padding-left: 16px;
-                font-size: 16px;
+                padding-left: 1rem;
+                font-size: 1rem;
 
                 &::placeholder {
 
@@ -281,8 +281,8 @@
 
             #comment {
 
-                height: 120px;
-                padding-top: 16px;
+                height: 7.5rem;
+                padding-top: 1rem;
             }
 
             label {
@@ -295,14 +295,14 @@
 
 
             &--button {
-                margin-top: 16px;
-                border-radius: 5px;
+                margin-top: 1rem;
+                border-radius: .3125rem;
                 color: white;
                 background-color: $band-site-black;
-                height: 50px;
-                font-size: 18px;
+                height: 3.125rem;
+                font-size: 1.125rem;
                 padding-bottom: 0;
-                line-height: 50px;
+                line-height: 3.125rem;
 
 
 
@@ -319,19 +319,19 @@
 
 .comment__label {
 
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     .hero {
         height: 100vh;
     }
 
     .hero__content-h1 {
-        padding-left: 36px;
+        padding-left: 2.25rem;
 
         font-size: $page-header-text-desktop;
         line-height: $page-header-line-height-desktop;
@@ -340,7 +340,7 @@
 
     .sectionHeader {
         h2 {
-            padding: 0px 64px;
+            padding: 0rem 4rem;
             font-size: $section-header-text-size-desktop;
             line-height: $section-header-line-height-desktop;
             font-weight: $section-header-text-weight-desktop;
@@ -350,7 +350,7 @@
     .article__header {
         h3 {
             margin-bottom: 0;
-            padding: 8px 160px 0px 160px;
+            padding: .5rem 10rem 0rem 10rem;
             font-size: $subheader-text-size-desktop;
             line-height: $subheader-line-height-desktop;
             font-weight: $subheader-text-weight-desktop;
@@ -359,7 +359,7 @@
     }
 
     .article__header2 {
-        padding: 8px 176px 0px 176px;
+        padding: .5rem 11rem 0rem 11rem;
         font-size: $subheader-text-size-desktop;
         line-height: $subheader-line-height-desktop;
         font-weight: $subheader-text-weight-desktop;
@@ -368,7 +368,7 @@
     .article__header-sub {
 
         margin-top: 0;
-        padding: 0px 174px;
+        padding: 0rem 10.875rem;
         font-size: $subheader-text-size-desktop;
         line-height: $subheader-line-height-desktop;
         font-weight: $subheader-text-weight-desktop;
@@ -377,7 +377,7 @@
 
     .article__content {
 
-        padding: 0px 160px;
+        padding: 0rem 10rem;
 
         p {
             font-size: $body-copy-text-size-desktop;
@@ -388,14 +388,14 @@
     }
 
     .about-section__h2 {
-        padding-left: 48px;
+        padding-left: 3rem;
         font-size: 3rem;
-        padding-top: 16px;
+        padding-top: 1rem;
         font-family: "AvenirDemi";
     }
 
     .main-image {
-        padding: 0px 176px;
+        padding: 0rem 11rem;
 
         img {
             height: 70%;
@@ -408,9 +408,9 @@
         &__container {
             display: flex;
             flex-direction: row;
-            gap: 26px;
+            gap: 1.625rem;
             flex-wrap: wrap;
-            padding: 0 26px;
+            padding: 0 1.625rem;
 
             img {
 
@@ -421,8 +421,8 @@
 
 
         h2 {
-            padding: 0px 26px 16px 26px;
-            font-size: 48px;
+            padding: 0rem 1.625rem 1rem 1.625rem;
+            font-size: 3rem;
             line-height: $section-header-line-height-desktop;
             font-weight: $section-header-text-weight-desktop;
         }
@@ -431,14 +431,14 @@
 
     .placeholder-box__header {
 
-        padding-left: 36px;
+        padding-left: 2.25rem;
     }
 
     .placeholder-box {
 
-        padding: 0 160px 0 80px;
-        margin: 0 16px;
-        border-bottom: 2px lightgray solid;
+        padding: 0 10rem 0 5rem;
+        margin: 0 1rem;
+        border-bottom: .125rem lightgray solid;
 
         &__container {
 
@@ -447,18 +447,18 @@
             padding-bottom: 0;
             margin-bottom: 0;
             border: initial;
-            
+
 
 
 
             &--image {
 
-                width: 50px;
-                height: 50px;
-                margin-right: 16px;
+                width: 3.125rem;
+                height: 3.125rem;
+                margin-right: 1rem;
                 border-radius: 50%;
                 overflow: hidden;
-                margin-top: 42px;
+                margin-top: 2.625rem;
 
                 img {
 
@@ -478,15 +478,15 @@
                 #name,
                 #comment {
 
-                    margin: 8px 0;
-                    height: 50px;
-                    border-width: 1px;
+                    margin: .5rem 0;
+                    height: 3.125rem;
+                    border-width: .0625rem;
                     border-color: lightgray;
                     background-color: $alabaster;
-                    border-radius: 5px;
+                    border-radius: .3125rem;
                     font-family: 'avenir';
-                    padding-left: 16px;
-                    font-size: 16px;
+                    padding-left: 1rem;
+                    font-size: 1rem;
 
                     &::placeholder {
 
@@ -497,29 +497,29 @@
 
                 #comment {
 
-                    height: 120px;
-                    padding-top: 16px;
+                    height: 7.5rem;
+                    padding-top: 1rem;
                 }
 
                 label {
 
                     color: rgb(151, 151, 151);
-                    padding-top: 16px;
+                    padding-top: 1rem;
                     text-transform: uppercase;
                 }
 
 
 
                 &--button {
-                    margin-top: 16px;
-                    margin-bottom: 26px;
-                    border-radius: 5px;
+                    margin-top: 1rem;
+                    margin-bottom: 1.625rem;
+                    border-radius: .3125rem;
                     color: white;
                     background-color: $band-site-black;
-                    height: 50px;
-                    font-size: 18px;
-                    
-                    line-height: 50px;
+                    height: 3.125rem;
+                    font-size: 1.125rem;
+
+                    line-height: 3.125rem;
                     width: 30%;
                     align-self: flex-end;
 
@@ -542,21 +542,21 @@
 
             &__objects {
 
-                margin-top: 16px;
-                margin-bottom: 36px;
+                margin-top: 1rem;
+                margin-bottom: 2.25rem;
             }
         }
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
 
     .hero {
         height: 100vh;
     }
 
     .hero__content-h1 {
-        padding-left: 36px;
+        padding-left: 2.25rem;
 
         font-size: $page-header-text-desktop;
         line-height: $page-header-line-height-desktop;
@@ -565,7 +565,7 @@
 
     .sectionHeader {
         h2 {
-            padding: 0px 64px;
+            padding: 0rem 4rem;
             font-size: $section-header-text-size-desktop;
             line-height: $section-header-line-height-desktop;
             font-weight: $section-header-text-weight-desktop;
@@ -575,7 +575,7 @@
     .article__header {
         h3 {
             margin-bottom: 0;
-            padding: 8px 160px 0px 160px;
+            padding: .5rem 10rem 0rem 10rem;
             font-size: $subheader-text-size-desktop;
             line-height: $subheader-line-height-desktop;
             font-weight: $subheader-text-weight-desktop;
@@ -584,7 +584,7 @@
     }
 
     .article__header2 {
-        padding: 8px 176px 0px 176px;
+        padding: .5rem 11rem 0rem 11rem;
         font-size: $subheader-text-size-desktop;
         line-height: $subheader-line-height-desktop;
         font-weight: $subheader-text-weight-desktop;
@@ -593,7 +593,7 @@
     .article__header-sub {
 
         margin-top: 0;
-        padding: 0px 174px;
+        padding: 0rem 10.875rem;
         font-size: $subheader-text-size-desktop;
         line-height: $subheader-line-height-desktop;
         font-weight: $subheader-text-weight-desktop;
@@ -602,7 +602,7 @@
 
     .article__content {
 
-        padding: 0px 160px;
+        padding: 0rem 10rem;
 
         p {
             font-size: $body-copy-text-size-desktop;
@@ -613,14 +613,14 @@
     }
 
     .about-section__h2 {
-        padding-left: 48px;
+        padding-left: 3rem;
         font-size: 3rem;
-        padding-top: 16px;
+        padding-top: 1rem;
         font-family: "AvenirDemi";
     }
 
     .main-image {
-        padding: 0px 176px;
+        padding: 0rem 11rem;
 
         img {
             height: 70%;
@@ -633,9 +633,9 @@
         &__container {
             display: flex;
             flex-direction: row;
-            gap: 32px;
+            gap: 2rem;
             flex-wrap: wrap;
-            padding: 0 128px;
+            padding: 0 8rem;
 
             img {
 
@@ -646,8 +646,8 @@
 
 
         h2 {
-            padding: 0px 26px 16px 26px;
-            font-size: 48px;
+            padding: 0rem 1.625rem 1rem 1.625rem;
+            font-size: 3rem;
             line-height: $section-header-line-height-desktop;
             font-weight: $section-header-text-weight-desktop;
         }
@@ -656,16 +656,16 @@
 
     .placeholder-box__header {
 
-        padding-left: 128px;
-        font-size: 40px;
-        padding-top: 64px;
+        padding-left: 8rem;
+        font-size: 2.5rem;
+        padding-top: 4rem;
     }
 
     .placeholder-box {
 
-        // padding: 0 400px 0 400px;
-        margin: 0 400px;
-        border-bottom: 2px lightgray solid;
+        // padding: 0 25rem 0 25rem;
+        margin: 0 25rem;
+        border-bottom: .125rem lightgray solid;
 
         &__container {
 
@@ -674,18 +674,18 @@
             padding-bottom: 0;
             margin-bottom: 0;
             border: initial;
-            
+
 
 
 
             &--image {
 
-                width: 50px;
-                height: 50px;
-                margin-right: 16px;
+                width: 3.125rem;
+                height: 3.125rem;
+                margin-right: 1rem;
                 border-radius: 50%;
                 overflow: hidden;
-                margin-top: 42px;
+                margin-top: 2.625rem;
 
                 img {
 
@@ -705,15 +705,15 @@
                 #name,
                 #comment {
 
-                    margin: 8px 0;
-                    height: 50px;
-                    border-width: 1px;
+                    margin: .5rem 0;
+                    height: 3.125rem;
+                    border-width: .0625rem;
                     border-color: lightgray;
                     background-color: $alabaster;
-                    border-radius: 5px;
+                    border-radius: .3125rem;
                     font-family: 'avenir';
-                    padding-left: 16px;
-                    font-size: 16px;
+                    padding-left: 1rem;
+                    font-size: 1rem;
                     flex-shrink: 0;
 
                     &::placeholder {
@@ -725,29 +725,29 @@
 
                 #comment {
 
-                    height: 120px;
-                    padding-top: 16px;
+                    height: 7.5rem;
+                    padding-top: 1rem;
                 }
 
                 label {
 
                     color: rgb(151, 151, 151);
-                    padding-top: 16px;
+                    padding-top: 1rem;
                     text-transform: uppercase;
                 }
 
 
 
                 &--button {
-                    margin-top: 16px;
-                    margin-bottom: 26px;
-                    border-radius: 5px;
+                    margin-top: 1rem;
+                    margin-bottom: 1.625rem;
+                    border-radius: .3125rem;
                     color: white;
                     background-color: $band-site-black;
-                    height: 50px;
-                    font-size: 18px;
-                    
-                    line-height: 50px;
+                    height: 3.125rem;
+                    font-size: 1.125rem;
+
+                    line-height: 3.125rem;
                     width: 30%;
                     align-self: flex-end;
 
@@ -768,17 +768,15 @@
 
         &__containers {
 
-            
+
 
             &__objects {
-                // padding: 0 400px;
-                margin: 0 400px;
-                margin-top: 16px;
-                margin-bottom: 36px;
+                margin: 0 25rem;
+                margin-top: 1rem;
+                margin-bottom: 2.25rem;
                 width: auto;
             }
         }
     }
-    
-}
 
+}

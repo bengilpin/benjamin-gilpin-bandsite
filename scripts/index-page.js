@@ -1,16 +1,3 @@
-// You must have an array in JavaScript with 3 default comment objects to start. Comments must have a name, a timestamp, and the comment text.
-// You must have a function that takes in one comment object as a parameter and displays it on the page using JavaScript DOM manipulation.
-
-// You must use an HTML Form with the following functionality:
-// That submits using the addEventListener
-// Prevents the page from reloading when submitting a new comment
-// Constructs a new comment object
-// Pushes a new comment object to an array of comments
-// Clears all comments from the page
-// Re-renders to the page all comments from the comment array
-// Clears the input fields after submitting a new comment
-
-//build default array
 
 const commentsArray = [
   {
@@ -52,7 +39,7 @@ function createComment(commentData) {
 
   const commentCardContent = document.createElement("div");
   commentCardContent.classList.add("comment-box__containers__objects--content");
-  commentCard.appendChild(commentCardContent); // Fix typo here
+  commentCard.appendChild(commentCardContent); 
 
   const commentCardContentHeader = document.createElement("div");
   commentCardContentHeader.classList.add(
@@ -63,7 +50,7 @@ function createComment(commentData) {
   const name = document.createElement("p");
   name.classList.add("comment-box__containers--text--name");
   name.classList.add("bold16");
-  name.innerText = commentData.name; // Accessing properties from commentData
+  name.innerText = commentData.name; 
   commentCardContentHeader.appendChild(name);
 
   const date = document.createElement("p");
@@ -111,9 +98,8 @@ document
       document.getElementById("name").value = "";
       document.getElementById("comment").value = "";
 
-      renderComments(); // Call renderComments after adding a new comment
+      renderComments();
     }
   });
 
-// Initial rendering of existing comments
 renderComments();

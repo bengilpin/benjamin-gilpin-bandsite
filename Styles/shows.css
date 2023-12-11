@@ -1,44 +1,44 @@
 .header {
   background-color: #323232;
-  padding: 20px 0px 0px 0px;
+  padding: 1.25rem 0rem 0rem 0rem;
   text-align: center;
   height: 6rem;
 }
 .header__logo--link {
-  max-width: 120px;
-  max-height: 20px;
+  max-width: 7.5rem;
+  max-height: 1.25rem;
 }
 .header__nav {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 .header__nav-link {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
   font-weight: demi 600;
-  margin-bottom: 0px;
+  margin-bottom: 0rem;
   text-decoration: none;
   color: #E1E1E1;
   flex-grow: 1;
   max-width: 50%;
 }
 .header__nav-link:hover {
-  border-bottom: 3px solid white;
-  padding-bottom: 14px;
-  margin-bottom: 0px;
+  border-bottom: 0.1875rem solid white;
+  padding-bottom: 0.875rem;
+  margin-bottom: 0rem;
   color: white;
   font-family: "AvenirDemi";
 }
 .header__nav-link--active {
-  border-bottom: 3px solid white;
-  padding-bottom: 14px;
-  margin-bottom: 0px;
+  border-bottom: 0.1875rem solid white;
+  padding-bottom: 0.875rem;
+  margin-bottom: 0rem;
   color: white;
   font-family: "AvenirDemi";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .header {
     background-color: #323232;
     padding: 0;
@@ -49,35 +49,35 @@
     justify-content: flex-start;
   }
   .header__logo--link {
-    max-width: 120px;
-    max-height: 20px;
-    padding: 0 36px;
+    max-width: 7.5rem;
+    max-height: 1.25rem;
+    padding: 0 2.25rem;
   }
   .header__nav {
-    padding: 36px 36px 0 0px;
+    padding: 2.25rem 2.25rem 0 0rem;
   }
   .header__nav-link {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     font-weight: demi 600;
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
     text-decoration: none;
     color: #E1E1E1;
     width: 100%;
     padding: 0;
-    margin: 0 36px;
+    margin: 0 2.25rem;
   }
   .header__nav-link:hover {
-    border-bottom: 3px solid white;
-    padding-bottom: 36px;
-    margin-bottom: 0px;
+    border-bottom: 0.1875rem solid white;
+    padding-bottom: 2.25rem;
+    margin-bottom: 0rem;
     color: white;
     font-family: "AvenirDemi";
   }
   .header__nav-link--active {
-    border-bottom: 3px solid white;
-    padding-bottom: 36px;
-    margin-bottom: 0px;
+    border-bottom: 0.1875rem solid white;
+    padding-bottom: 2.25rem;
+    margin-bottom: 0rem;
     color: white;
     font-family: "AvenirDemi";
   }
@@ -85,7 +85,7 @@
 .get-in-touch {
   background-color: #323232;
   color: #fff;
-  padding: 16px;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -93,32 +93,32 @@
   color: white;
 }
 .get-in-touch p {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   font-weight: regular 400;
 }
 .get-in-touch__logo {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .get-in-touch__socials {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   align-content: center;
 }
 .get-in-touch__socials--icon {
-  margin-right: 30px;
+  margin-right: 1.875rem;
   text-align: center;
   height: auto;
 }
 .get-in-touch__logo-image {
-  max-width: 120px;
-  height: 20px;
+  max-width: 7.5rem;
+  height: 1.25rem;
   display: block;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .get-in-touch__cards {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 .get-in-touch__cards-itemtop {
   margin-bottom: 0;
@@ -131,12 +131,12 @@ span {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .get-in-touch {
-    padding: 24px 36px 0px 36px;
+    padding: 1.5rem 2.25rem 0rem 2.25rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 24px;
+    grid-gap: 1.5rem;
   }
   .get-in-touch__cards {
     color: white;
@@ -144,75 +144,75 @@ span {
   .get-in-touch__cards__cam {
     grid-row: 2;
     grid-column: 1;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__cam2 {
     grid-row: 3;
     grid-column: 1;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__cam-email {
     grid-row: 4;
     grid-column: 1;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__pearl {
     grid-row: 2;
     grid-column: 2;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__carson {
     grid-row: 2;
     grid-column: 3;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__carson2 {
     grid-row: 3;
     grid-column: 3;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__carson-email {
     grid-row: 4;
     grid-column: 3;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards-itemtop {
     color: lightgray;
     margin-bottom: 0;
-    padding-bottom: 4px;
-    font-size: 32px;
-    line-height: 18px;
+    padding-bottom: 0.25rem;
+    font-size: 2rem;
+    line-height: 1.125rem;
     font-weight: regular 400;
   }
   .get-in-touch__cards--itembottom {
     color: lightgray;
     margin-top: 0;
-    font-size: 32px;
-    line-height: 18px;
+    font-size: 2rem;
+    line-height: 1.125rem;
     font-weight: regular 400;
   }
   .get-in-touch__cards__pearl2 {
     grid-row: 3;
     grid-column: 2;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__pearl-email {
-    font-size: 32px;
+    font-size: 2rem;
     grid-row: 4;
     grid-column: 2;
-    padding-right: 24px;
+    padding-right: 1.5rem;
   }
   .get-in-touch__copyright {
     grid-row: 5;
-    font-size: 32px;
+    font-size: 2rem;
     grid-column: 1;
     grid-column: span 2;
   }
@@ -231,12 +231,12 @@ span {
     grid-row: 1;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .get-in-touch {
-    padding: 24px 128px 0px 128px;
+    padding: 1.5rem 8rem 0rem 8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 24px;
+    grid-gap: 1.5rem;
   }
   .get-in-touch__cards {
     color: white;
@@ -244,75 +244,75 @@ span {
   .get-in-touch__cards__cam {
     grid-row: 2;
     grid-column: 1;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__cam2 {
     grid-row: 3;
     grid-column: 1;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__cam-email {
     grid-row: 4;
     grid-column: 1;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__pearl {
     grid-row: 2;
     grid-column: 2;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__carson {
     grid-row: 2;
     grid-column: 3;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__carson2 {
     grid-row: 3;
     grid-column: 3;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__carson-email {
     grid-row: 4;
     grid-column: 3;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards-itemtop {
     color: lightgray;
     margin-bottom: 0;
-    padding-bottom: 4px;
-    font-size: 32px;
-    line-height: 18px;
+    padding-bottom: 0.25rem;
+    font-size: 2rem;
+    line-height: 1.125rem;
     font-weight: regular 400;
   }
   .get-in-touch__cards--itembottom {
     color: lightgray;
     margin-top: 0;
-    font-size: 32px;
-    line-height: 18px;
+    font-size: 2rem;
+    line-height: 1.125rem;
     font-weight: regular 400;
   }
   .get-in-touch__cards__pearl2 {
     grid-row: 3;
     grid-column: 2;
-    padding-right: 24px;
-    font-size: 32px;
+    padding-right: 1.5rem;
+    font-size: 2rem;
   }
   .get-in-touch__cards__pearl-email {
-    font-size: 32px;
+    font-size: 2rem;
     grid-row: 4;
     grid-column: 2;
-    padding-right: 24px;
+    padding-right: 1.5rem;
   }
   .get-in-touch__copyright {
     grid-row: 5;
-    font-size: 32px;
+    font-size: 2rem;
     grid-column: 1;
     grid-column: span 2;
   }
@@ -378,23 +378,23 @@ body {
 
 h1 {
   font-family: "AvenirBold";
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
   font-weight: bold 700;
 }
 
 h2 {
   font-family: "AvenirBold";
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: bold 700;
   color: #323232;
 }
 
 h3 {
   font-family: "AvenirDemi";
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
   font-weight: demi 600;
   color: #323232;
 }
@@ -402,23 +402,23 @@ h3 {
 .bold20 {
   font-family: "AvenirDemi";
   font-weight: 700 bold;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .bold22 {
   font-family: "AvenirDemi";
   font-weight: 700 bold;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .bold16 {
   font-family: "AvenirDemi";
   font-weight: 700 bold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .javascript-shows {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   max-width: 100%;
 }
 
@@ -440,13 +440,13 @@ h3 {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 16px 16px;
+  padding: 1rem 1rem;
 }
 .hero__content-title {
   margin-bottom: 0;
 }
 .hero__content-subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Avenir";
   font-weight: 100;
 }
@@ -461,7 +461,7 @@ h3 {
 }
 
 .iframe__div {
-  font-size: 10px;
+  font-size: 0.625rem;
   color: #cccccc;
   line-break: anywhere;
   word-break: normal;
@@ -477,44 +477,44 @@ h3 {
 }
 
 .upcoming-shows__header {
-  margin-left: 16px;
-  margin-top: 40px;
-  margin-bottom: 16px;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 .upcoming-shows__containers {
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  border-bottom: 2px lightgrey solid;
+  padding: 1rem;
+  border-bottom: 0.125rem lightgrey solid;
 }
 .upcoming-shows__containers--button {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   color: white;
   background-color: #323232;
-  height: 50px;
-  font-size: 18px;
+  height: 3.125rem;
+  font-size: 1.125rem;
 }
 .upcoming-shows__containers--titles {
   color: rgb(151, 151, 151);
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
   text-transform: uppercase;
   font-weight: 100;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+  letter-spacing: 0.0313rem;
 }
 .upcoming-shows__containers--titles--venue-location {
-  margin-top: 14px;
+  margin-top: 0.875rem;
 }
 .upcoming-shows__containers--titles-sub {
   font-family: "AvenirDemi";
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 0.625rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   iframe {
     width: 60%;
-    padding-left: 32px;
+    padding-left: 2rem;
   }
   .hero {
     position: relative;
@@ -534,35 +534,35 @@ h3 {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 32px 32px 64px 32px;
+    padding: 2rem 2rem 4rem 2rem;
   }
   .hero__content-title {
     margin-bottom: 0;
   }
   .hero__content-subtitle {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Avenir";
     font-weight: 100;
-    padding-left: 36px;
+    padding-left: 2.25rem;
   }
   .hero__content-h1--line1 {
     margin-bottom: 0;
-    font-size: 64px;
-    padding-left: 32px;
+    font-size: 4rem;
+    padding-left: 2rem;
   }
   .hero__content-h1--line2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 64px;
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 64px;
+    font-size: 4rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
   .hero__content-h1--preline {
     margin-bottom: 0;
   }
   .iframe__div {
-    font-size: 10px;
+    font-size: 0.625rem;
     color: #cccccc;
     line-break: anywhere;
     word-break: normal;
@@ -577,51 +577,51 @@ h3 {
     text-decoration: none;
   }
   .upcoming-shows__header {
-    margin-left: 16px;
-    margin-top: 40px;
-    margin-bottom: 16px;
-    padding-left: 40px;
-    padding-top: 16px;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
   }
   .upcoming-shows__containers {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
-    border-bottom: 2px lightgrey solid;
+    padding: 1rem;
+    border-bottom: 0.125rem lightgrey solid;
   }
   .upcoming-shows__containers :hover {
     background-color: lightgray;
   }
   .upcoming-shows__containers--button {
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     color: white;
     background-color: #323232;
-    height: 50px;
-    font-size: 18px;
+    height: 3.125rem;
+    font-size: 1.125rem;
   }
   .upcoming-shows__containers--titles {
     color: rgb(151, 151, 151);
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+    font-size: 0.875rem;
+    letter-spacing: 0.0313rem;
   }
   .upcoming-shows__containers--titles--venue-location {
-    margin-top: 14px;
+    margin-top: 0.875rem;
   }
   .upcoming-shows__containers--titles-sub {
     font-family: "AvenirDemi";
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 0.625rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   iframe {
     width: 40%;
-    padding-left: 32px;
+    padding-left: 2rem;
   }
   .hero__text--wrapper {
     display: flex;
@@ -646,34 +646,34 @@ h3 {
     flex-direction: row;
     align-items: center;
     color: white;
-    padding: 16px 16px;
+    padding: 1rem 1rem;
   }
   .hero__content-title {
     margin-bottom: 0;
   }
   .hero__content-subtitle {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Avenir";
     font-weight: 100;
-    padding-left: 36px;
+    padding-left: 2.25rem;
   }
   .hero__content-h1--line1 {
     margin-bottom: 0;
-    font-size: 64px;
-    padding-left: 32px;
+    font-size: 4rem;
+    padding-left: 2rem;
   }
   .hero__content-h1--line2 {
     margin-top: 0;
-    font-size: 64px;
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 64px;
+    font-size: 4rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
   .hero__content-h1--preline {
     margin-bottom: 0;
   }
   .iframe__div {
-    font-size: 10px;
+    font-size: 0.625rem;
     color: #cccccc;
     line-break: anywhere;
     word-break: normal;
@@ -688,44 +688,44 @@ h3 {
     text-decoration: none;
   }
   .upcoming-shows__header {
-    margin-left: 16px;
-    margin-top: 40px;
-    margin-bottom: 16px;
-    padding-left: 40px;
-    padding-top: 16px;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
   }
   .upcoming-shows__containers {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
-    border-bottom: 2px lightgrey solid;
+    padding: 1rem;
+    border-bottom: 0.125rem lightgrey solid;
   }
   .upcoming-shows__containers :hover {
     background-color: lightgray;
   }
   .upcoming-shows__containers--button {
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     color: white;
     background-color: #323232;
-    height: 50px;
-    font-size: 18px;
+    height: 3.125rem;
+    font-size: 1.125rem;
   }
   .upcoming-shows__containers--titles {
     color: rgb(151, 151, 151);
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 14px;
-    letter-spacing: 0.5px;
+    font-size: 0.875rem;
+    letter-spacing: 0.0313rem;
   }
   .upcoming-shows__containers--titles--venue-location {
-    margin-top: 14px;
+    margin-top: 0.875rem;
   }
   .upcoming-shows__containers--titles-sub {
     font-family: "AvenirDemi";
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 0.625rem;
   }
 }/*# sourceMappingURL=shows.css.map */
