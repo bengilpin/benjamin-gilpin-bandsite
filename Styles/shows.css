@@ -608,6 +608,7 @@ h3 {
     font-weight: 100;
     font-size: 0.875rem;
     letter-spacing: 0.0313rem;
+    width: 140px;
   }
   .upcoming-shows__containers--titles--venue-location {
     margin-top: 0.875rem;
@@ -650,6 +651,7 @@ h3 {
   }
   .hero__content-title {
     margin-bottom: 0;
+    width: 140px;
   }
   .hero__content-subtitle {
     font-size: 2.25rem;
@@ -702,8 +704,8 @@ h3 {
     padding: 1rem;
     border-bottom: 0.125rem lightgrey solid;
   }
-  .upcoming-shows__containers :hover {
-    background-color: lightgray;
+  .upcoming-shows__containers:hover {
+    background-color: gray;
   }
   .upcoming-shows__containers--button {
     border-radius: 0.3125rem;

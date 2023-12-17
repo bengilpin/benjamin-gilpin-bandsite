@@ -248,9 +248,6 @@
             justify-content: space-around;
             align-items: center;
 
-
-
-
             padding: 1rem;
             border-bottom: .125rem lightgrey solid;
 
@@ -261,6 +258,7 @@
                 background-color: $band-site-black;
                 height: 3.125rem;
                 font-size: 1.125rem;
+               
 
             }
 
@@ -273,6 +271,8 @@
                 font-weight: 100;
                 font-size: .875rem;
                 letter-spacing: .0313rem;
+                width: 140px;
+                
 
                 &--venue-location {
 
@@ -337,6 +337,7 @@
             &-title {
 
                 margin-bottom: 0;
+                width: 140px;
             }
 
             &-subtitle {
@@ -403,23 +404,22 @@
             padding-top: 1rem;
         }
 
+        // &__containers:hover {
+        //     background-color: $alabaster;
+        // }
 
 
         &__containers {
 
-            :hover {
-                background-color: lightgray;
+            &:hover {
 
+                background-color: gray;
             }
 
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-
-
-
-
             padding: 1rem;
             border-bottom: .125rem lightgrey solid;
 
