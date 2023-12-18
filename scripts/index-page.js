@@ -4,19 +4,7 @@ const api_key = "3d55f80c-bb2b-4ddf-b49f-e9d0c361702f";
 
 const comments = new BandSiteApi(api_key);
 
-
 document.addEventListener("DOMContentLoaded", async function () {
-  // Your existing code here
-
-  function getCurrentTimestamp() {
-    const now = new Date();
-    const month = (now.getMonth() + 1).toString().padStart(2, "0");
-    const day = now.getDate().toString().padStart(2, "0");
-    const year = now.getFullYear();
-    console.log("timestamp working");
-    return `${month}/${day}/${year}`;
-  }
-
   function createComment(commentData) {
     const commentCard = document.createElement("div");
     commentCard.classList.add("comment-box__containers__objects");
@@ -45,7 +33,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const date = document.createElement("p");
     date.classList.add("comment-box__containers__objects--header--date");
-    date.innerText = getCurrentTimestamp()
+    const currentDate = new Date(commentData.timestamp);
+    date.innerText = currentDate.toLocaleString();
     commentCardContentHeader.appendChild(date);
 
     const newComment = document.createElement("p");
@@ -64,9 +53,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       const newComments = await comments.getComments();
       const reversedComments = newComments.reverse();
       console.log(newComments.data);
-      for (let i = 0; i < newComments.length; i++) {
-        const card = createComment(newComments[i]);
-        
+      for (let i = 0; i < reversedComments.length; i++) {
+        const card = createComment(reversedComments[i]);
+
         myCommentContainer.appendChild(card);
       }
       console.log("comments render function working");
@@ -85,8 +74,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       if (name && post) {
         const newComment = {
           name: name,
-          // timestamp: getCurrentTimestamp(),
-          comment: post
+          comment: post,
         };
 
         await comments.postComment(newComment);

@@ -29,7 +29,7 @@ export default class BandSiteApi {
   }
 
   async getShows() {
-    const url = `${this.apiUrl}shows?api_key=${this.apiKey}`;
+    const url = `${this.apiUrl}showdates?api_key=${this.apiKey}`;
 
     try {
       const showResponse = await axios.get(url);
