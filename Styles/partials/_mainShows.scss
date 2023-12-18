@@ -239,7 +239,7 @@
         &__containers {
 
             :hover {
-                background-color: lightgray;
+                
 
             }
 
@@ -407,6 +407,11 @@
         &__containers {
 
             &:hover {
+
+                background-color: $alabaster;
+            }
+
+            &:focus {
 
                 background-color: gray;
             }

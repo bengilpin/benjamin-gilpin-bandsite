@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   function createShows(show) {
     const showContainer = document.createElement("div");
     showContainer.classList.add("upcoming-shows__containers");
+    showContainer.setAttribute('tabindex', '0');
 
     const miniContainer = document.createElement("div");
     miniContainer.classList.add("upcoming-shows__containers__mini");

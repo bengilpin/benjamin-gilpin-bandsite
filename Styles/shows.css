@@ -591,9 +591,6 @@ h3 {
     padding: 1rem;
     border-bottom: 0.125rem lightgrey solid;
   }
-  .upcoming-shows__containers :hover {
-    background-color: lightgray;
-  }
   .upcoming-shows__containers--button {
     border-radius: 0.3125rem;
     color: white;
@@ -705,6 +702,9 @@ h3 {
     border-bottom: 0.125rem lightgrey solid;
   }
   .upcoming-shows__containers:hover {
+    background-color: #FAFAFA;
+  }
+  .upcoming-shows__containers:focus {
     background-color: gray;
   }
   .upcoming-shows__containers--button {
